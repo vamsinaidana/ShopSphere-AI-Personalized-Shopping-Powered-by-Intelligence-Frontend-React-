@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+/* ShopSphere AI — responsive foundation */
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f8fafc;
+  background: #020617;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+body { min-height: 100vh; }
+button, input, textarea, select { font: inherit; max-width: 100%; }
+button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+img, video { display: block; max-width: 100%; }
+input, select, textarea { min-width: 0; }
+main, section, article, form, nav, aside, header, footer { min-width: 0; }
+h1, h2, h3, h4, p, a, span, td, th, label { overflow-wrap: anywhere; }
+table { border-collapse: collapse; max-width: 100%; }
+pre, code { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* Tablet and smaller laptop layouts */
+@media (max-width: 1023px) {
+  main { max-width: 100%; }
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Phones */
+@media (max-width: 767px) {
+  body { font-size: 15px; }
+  main {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  nav {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  h1 { font-size: clamp(1.75rem, 8vw, 2.5rem); line-height: 1.15; }
+  h2 { line-height: 1.25; }
+  input, select, textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+  table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  [class*="overflow-y-auto"] { overscroll-behavior: contain; }
+  .grid, .flex { min-width: 0; }
+}
+
+/* Compact phones */
+@media (max-width: 380px) {
+  main { padding-left: 12px !important; padding-right: 12px !important; }
+  .rounded-3xl { border-radius: 1.25rem; }
+  .rounded-2xl { border-radius: 1rem; }
+}
+
+
+/* Component-level responsive refinements */
+@media (max-width: 767px) {
+  /* Main hero content: reduce oversized vertical whitespace on phones. */
+  main section[class*="py-32"] { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+  main h1[class*="text-5xl"], main h1[class*="text-6xl"], main h1[class*="text-7xl"] {
+    font-size: clamp(2rem, 9vw, 3rem) !important;
+    line-height: 1.12 !important;
+  }
+  main h2[class*="text-4xl"], main h2[class*="text-3xl"] {
+    font-size: clamp(1.4rem, 6vw, 2rem) !important;
+  }
+
+  /* Cards and panels should use comfortable phone padding. */
+  [class*="rounded-3xl"][class*="p-8"] { padding: 1.25rem !important; }
+  [class*="rounded-2xl"][class*="p-10"] { padding: 1.25rem !important; }
+
+  /* Product detail: keep image and information from becoming too tall. */
+  img[class*="max-h-96"] { max-height: 18rem; }
+  article { min-width: 0; }
+
+  /* Assistant chat: fit the viewport and keep controls usable. */
+  section[class*="max-w-4xl"][class*="rounded-3xl"] {
+    border-radius: 1rem !important;
+  }
+
+  /* Prevent summary rows and action groups from colliding. */
+  [class*="justify-between"] { column-gap: .75rem; }
+  [class*="text-4xl"] { overflow-wrap: anywhere; }
+}
+
+@media (max-width: 420px) {
+  /* Make form and card actions stack instead of squeezing. */
+  form [class*="flex"][class*="gap-3"] { flex-wrap: wrap; }
+  main [class*="flex-wrap"] { row-gap: .75rem; }
+  button, a[class*="px-6"][class*="py-3"] { max-width: 100%; }
+}
+
+/* ===== SHOPSPHERE GLOBAL ORANGE THEME ===== */
+
+:root {
+  color-scheme: light;
+  --brand-primary: #f97316;
+  --brand-hover: #ea580c;
+  --brand-light: #fff7ed;
+  --page-bg: #fffaf5;
+  --surface-bg: #ffffff;
+  --text-primary: #292524;
+  --text-muted: #78716c;
+  --border-color: #fed7aa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--page-bg) !important;
+  color: var(--text-primary) !important;
+  font-family: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+::selection {
+  background: #fed7aa;
+  color: #7c2d12;
+}
+
+button,
+a {
+  transition: all 0.25s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--brand-primary) !important;
+  outline-color: var(--brand-primary) !important;
+}
+
