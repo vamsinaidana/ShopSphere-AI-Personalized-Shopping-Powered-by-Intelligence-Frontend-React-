@@ -1,43 +1,42 @@
-
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
-import { login } from '../../store/slices/authSlice'
-import { ShoppingBag, Mail, Lock, Eye, EyeOff } from 'lucide-react'
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { login } from "../../store/slices/authSlice";
+import { ShoppingBag, Mail, Lock, Eye, EyeOff } from "lucide-react";
 
 export default function Login() {
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const [showPassword, setShowPassword] = useState(false)
+  const [showPassword, setShowPassword] = useState(false);
   const [form, setForm] = useState({
-    email: '',
-    password: '',
-  })
-  const [error, setError] = useState('')
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
 
-  const handleChange = e => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    setError('')
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError("");
 
-    const users = JSON.parse(localStorage.getItem('shopsphere_users') || '[]')
+    const users = JSON.parse(localStorage.getItem("shopsphere_users") || "[]");
     const existingUser = users.find(
-      user => user.email === form.email && user.password === form.password
-    )
+      (user) => user.email === form.email && user.password === form.password,
+    );
 
     if (!existingUser) {
-      setError('Invalid email or password.')
-      return
+      setError("Invalid email or password.");
+      return;
     }
 
-    const { password, ...safeUser } = existingUser
-    dispatch(login(safeUser))
-    navigate('/')
-  }
+    const { password, ...safeUser } = existingUser;
+    dispatch(login(safeUser));
+    navigate("/");
+  };
 
   return (
     <div className="min-h-screen bg-orange-50 flex items-center justify-center px-4 py-12">
@@ -56,9 +55,14 @@ export default function Login() {
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block text-sm font-medium mb-2">Email Address</label>
+            <label className="block text-sm font-medium mb-2">
+              Email Address
+            </label>
             <div className="relative">
-              <Mail className="absolute left-3 top-3.5 text-slate-400" size={19} />
+              <Mail
+                className="absolute left-3 top-3.5 text-slate-400"
+                size={19}
+              />
               <input
                 type="email"
                 name="email"
@@ -74,9 +78,12 @@ export default function Login() {
           <div>
             <label className="block text-sm font-medium mb-2">Password</label>
             <div className="relative">
-              <Lock className="absolute left-3 top-3.5 text-slate-400" size={19} />
+              <Lock
+                className="absolute left-3 top-3.5 text-slate-400"
+                size={19}
+              />
               <input
-                type={showPassword ? 'text' : 'password'}
+                type={showPassword ? "text" : "password"}
                 name="password"
                 value={form.password}
                 onChange={handleChange}
@@ -105,12 +112,12 @@ export default function Login() {
         </form>
 
         <p className="text-center text-sm text-slate-500 mt-7">
-          Don't have an account?{' '}
+          Don't have an account?{" "}
           <Link to="/signup" className="text-orange-600 font-semibold">
             Sign Up
           </Link>
         </p>
       </div>
     </div>
-  )
+  );
 }

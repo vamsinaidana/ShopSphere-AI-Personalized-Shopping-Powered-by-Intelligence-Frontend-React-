@@ -1,47 +1,49 @@
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { useSelector } from "react-redux";
+import { getRecommendations } from "../../../services/recommendationService";
 
-import { useCallback, useEffect, useMemo, useState } from 'react'
-import { useSelector } from 'react-redux'
-import { getRecommendations } from '../../../services/recommendationService'
-
-const readStorage = key => {
+const readStorage = (key) => {
   try {
-    return JSON.parse(localStorage.getItem(key) || '[]')
+    return JSON.parse(localStorage.getItem(key) || "[]");
   } catch {
-    return []
+    return [];
   }
-}
+};
 
 const useRecommendations = ({
   products = [],
   excludeIds = [],
   limit = 8,
-  strategy = 'personalized',
+  strategy = "personalized",
   currentProduct = null,
 } = {}) => {
-  const cartItems = useSelector(state => state.cart.items)
-  const wishlistItems = useSelector(state => state.wishlist.items)
+  const cartItems = useSelector((state) => state.cart.items);
+  const wishlistItems = useSelector((state) => state.wishlist.items);
 
-  const [recommendations, setRecommendations] = useState([])
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
+  const [recommendations, setRecommendations] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  const signals = useMemo(() => ({
-    recentlyViewed: readStorage('shopsphere_recently_viewed'),
-    wishlist: wishlistItems,
-    cart: cartItems,
-    orders: readStorage('shopsphere_orders'),
-    searchHistory: readStorage('shopsphere_search_history'),
-  }), [cartItems, wishlistItems])
+  const signals = useMemo(
+    () => ({
+      recentlyViewed: readStorage("shopsphere_recently_viewed"),
+      wishlist: wishlistItems,
+      cart: cartItems,
+      orders: readStorage("shopsphere_orders"),
+      searchHistory: readStorage("shopsphere_search_history"),
+    }),
+    [cartItems, wishlistItems],
+  );
 
   const fetchRecommendations = useCallback(async () => {
     if (!products.length) {
-      setRecommendations([])
-      return
+      setRecommendations([]);
+      return;
     }
 
     try {
-      setLoading(true)
-      setError(null)
+      setLoading(true);
+      setError(null);
 
       const result = await getRecommendations({
         products,
@@ -50,26 +52,19 @@ const useRecommendations = ({
         limit,
         strategy,
         currentProduct,
-      })
+      });
 
-      setRecommendations(result)
+      setRecommendations(result);
     } catch (err) {
-      setError(err.message || 'Unable to load recommendations')
+      setError(err.message || "Unable to load recommendations");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }, [
-    products,
-    signals,
-    excludeIds,
-    limit,
-    strategy,
-    currentProduct,
-  ])
+  }, [products, signals, excludeIds, limit, strategy, currentProduct]);
 
   useEffect(() => {
-    fetchRecommendations()
-  }, [fetchRecommendations])
+    fetchRecommendations();
+  }, [fetchRecommendations]);
 
   return {
     recommendations,
@@ -77,7 +72,7 @@ const useRecommendations = ({
     error,
     signals,
     refreshRecommendations: fetchRecommendations,
-  }
-}
+  };
+};
 
-export default useRecommendations
+export default useRecommendations;

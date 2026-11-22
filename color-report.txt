@@ -1,0 +1,509 @@
+﻿C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:53: <Link onClick={() => setMobileMenuOpen(false)} to="/compare" className="flex items-center gap-2 hover:text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:56: <Link onClick={() => setMobileMenuOpen(false)} to="/assistant" className="hover:text-orange-400">AI Assistant</Link>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:61: <Link onClick={() => setMobileMenuOpen(false)} to="/wishlist" className="flex items-center gap-2 hover:text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:64: <Link onClick={() => setMobileMenuOpen(false)} to="/profile" className="hover:text-orange-400">My Profile</Link>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:65: <Link onClick={() => setMobileMenuOpen(false)} to="/admin" className="hover:text-orange-400">Admin</Link>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:68: <span className="text-slate-400">Hi, {user.name}</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:75: <Link onClick={() => setMobileMenuOpen(false)} to="/login" className="hover:text-orange-400">Login</Link>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:76: <Link onClick={() => setMobileMenuOpen(false)} to="/signup" className="rounded-lg bg-orange-600 px-4 py-2 text-center text-white hover:bg-orange-700">Sign Up</Link>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:86: ShopSphere<span className="text-orange-400"> AI.</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:88: <div className="hidden items-center gap-4 text-sm text-slate-300 xl:flex 2xl:gap-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:96: className="rounded-lg border border-white/15 p-2 text-slate-200 hover:bg-white/10 xl:hidden"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:102: <div className="mt-4 flex max-h-[75vh] flex-col gap-4 overflow-y-auto rounded-xl border border-white/10 bg-stone-950 p-5 text-sm text-slate-200 shadow-2xl xl:hidden">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:124: <main className="min-h-screen bg-[#FFF7ED] text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:142: <h1 className="mt-7 text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl md:text-6xl xl:text-7xl">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:149: <p className="mx-auto mt-7 max-w-xl text-base leading-8 text-slate-600 sm:text-lg lg:mx-0">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:155: <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-slate-500 lg:mx-0">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:297: <p className="py-10 text-center text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:453: <div className="flex min-h-screen items-center justify-center bg-[#FFF7ED] text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:462: <div className="min-h-screen bg-[#FFF7ED] p-10 text-center text-red-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:469: <main className="min-h-screen overflow-x-hidden bg-[#FFF7ED] px-4 py-8 text-stone-900 sm:px-6 md:px-12 md:py-12">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:473: <p className="text-sm font-semibold uppercase tracking-widest text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:477: <p className="mt-3 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:485: <SlidersHorizontal className="text-orange-400" size={20} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:490: <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={19} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:496: className="w-full rounded-xl border border-white/10 bg-[#FFF7ED] py-3 pl-12 pr-4 text-stone-900 outline-none transition focus:border-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:502: <label className="mb-2 block text-sm text-slate-400">Category</label>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:506: className="w-full rounded-xl border border-white/10 bg-[#FFF7ED] px-3 py-3 text-sm text-stone-900 outline-none focus:border-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:518: <label className="mb-2 block text-sm text-slate-400">Minimum Price ($)</label>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:525: className="w-full rounded-xl border border-white/10 bg-[#FFF7ED] px-3 py-3 text-sm text-stone-900 outline-none focus:border-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:530: <label className="mb-2 block text-sm text-slate-400">Maximum Price ($)</label>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:537: className="w-full rounded-xl border border-white/10 bg-[#FFF7ED] px-3 py-3 text-sm text-stone-900 outline-none focus:border-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:542: <label className="mb-2 block text-sm text-slate-400">Minimum Rating</label>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:546: className="w-full rounded-xl border border-white/10 bg-[#FFF7ED] px-3 py-3 text-sm text-stone-900 outline-none focus:border-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:557: <label className="mb-2 block text-sm text-slate-400">Sort By</label>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:561: className="w-full rounded-xl border border-white/10 bg-[#FFF7ED] px-3 py-3 text-sm text-stone-900 outline-none focus:border-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:574: <p className="text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:580: className="rounded-lg border border-white/15 px-4 py-2 text-sm font-semibold text-slate-300 transition hover:border-orange-400 hover:text-white"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:589: <Search size={38} className="mx-auto mb-4 text-slate-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:591: <p className="mt-2 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:596: className="mt-5 rounded-xl bg-orange-600 px-5 py-3 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:611: className="overflow-hidden rounded-2xl border border-white/10 bg-white transition hover:-translate-y-1 hover:border-orange-400/50"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:625: className="absolute right-4 top-4 rounded-full bg-slate-100 p-3 text-stone-900 hover:text-red-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:636: <p className="text-xs capitalize text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:642: className="mt-2 block min-h-12 font-semibold hover:text-orange-400"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:655: className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl border border-orange-400/40 py-3 font-semibold text-orange-300 transition hover:bg-orange-500/10 disabled:cursor-not-allowed disabled:opacity-50"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:667: className="mt-3 w-full rounded-xl bg-orange-600 py-3 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:687: <main className="min-h-screen overflow-x-hidden bg-[#FFF7ED] px-4 py-8 text-stone-900 sm:px-6 md:px-12 md:py-12">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:691: <p className="text-sm font-semibold uppercase tracking-widest text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:695: <p className="mt-3 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:702: <Heart size={45} className="mx-auto mb-5 text-slate-600" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:704: <p className="mt-3 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:709: className="mt-6 inline-block rounded-xl bg-orange-600 px-6 py-3 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:742: className="flex-1 rounded-lg bg-orange-600 py-3 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:783: <main className="min-h-screen overflow-x-hidden bg-[#FFF7ED] px-4 py-6 text-stone-900 sm:px-6 sm:py-10">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:792: <p className="text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:798: className="mt-5 inline-block rounded-xl bg-orange-600 px-6 py-3 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:821: <p className="mt-2 text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:836: className="rounded bg-slate-700 px-3 py-1 disabled:opacity-40"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:853: className="rounded bg-slate-700 px-3 py-1 disabled:opacity-40"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:876: className="mt-6 block rounded-xl bg-orange-600 py-4 text-center font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:920: <main className="min-h-screen overflow-x-hidden bg-[#FFF7ED] px-4 py-8 text-stone-900 sm:px-6 md:px-12 md:py-10">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:925: <p className="text-sm font-semibold uppercase tracking-widest text-orange-400">Make a smarter choice</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:927: <p className="mt-3 text-slate-400">Compare up to four products side by side.</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:930: <button onClick={() => dispatch(clearCompare())} className="flex items-center gap-2 rounded-lg border border-white/15 px-4 py-2 text-sm text-slate-300 hover:bg-white/10">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:938: <GitCompareArrows size={48} className="mx-auto text-orange-400" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:940: <p className="mt-2 text-slate-400">Visit the products page and select products using Compare Product.</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:941: <Link to="/products" className="mt-6 inline-block rounded-xl bg-orange-600 px-6 py-3 font-semibold hover:bg-orange-500">Explore Products</Link>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:949: <th className="w-44 p-5 text-sm text-slate-400">Product details</th>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:953: <button onClick={() => dispatch(removeFromCompare(product.id))} aria-label={`Remove ${product.title}`} className="rounded-lg p-2 text-slate-400 hover:bg-white/10 hover:text-red-400"><X size={18} /></button>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:959: <h2 className="mt-4 line-clamp-2 font-semibold text-white hover:text-orange-300">{product.title}</h2>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:963: {compareItems.length < 4 && <th className="min-w-44 p-5 text-center"><Link to="/products" className="inline-flex flex-col items-center gap-2 rounded-xl border border-dashed border-orange-400/40 p-5 text-orange-300 hover:bg-orange-500/10"><GitCompareArrows size={24} />Add product</Link></th>}
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:978: <th className="p-5 text-sm font-medium text-slate-400">{label}</th>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:979: {compareItems.map(product => <td key={product.id} className="p-5 text-sm capitalize text-slate-200">{getValue(product)}</td>)}
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:980: {compareItems.length < 4 && <td className="p-5 text-slate-600">â€”</td>}
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:988: <section className="mt-8 rounded-2xl border border-orange-400/20 bg-orange-500/5 p-6">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:989: <div className="flex items-center gap-2 text-orange-300"><Sparkles size={20} /><h2 className="text-xl font-semibold">Smart Comparison Insights</h2></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:990: <p className="mt-2 text-sm text-slate-400">Rule-based insights calculated from the selected products.</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:992: <div className="rounded-xl bg-white p-4"><p className="text-xs uppercase tracking-wide text-slate-400">Lowest price</p><p className="mt-2 font-semibold">{cheapest.title}</p><p className="mt-1 text-orange-300">${Number(cheapest.price).toFixed(2)}</p></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:993: <div className="rounded-xl bg-white p-4"><p className="text-xs uppercase tracking-wide text-slate-400">Highest rating</p><p className="mt-2 font-semibold">{highestRated.title}</p><p className="mt-1 text-orange-300">â˜… {highestRated.rating ?? 'N/A'}</p></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:994: <div className="rounded-xl bg-white p-4"><p className="text-xs uppercase tracking-wide text-slate-400">Best rating-to-price</p><p className="mt-2 font-semibold">{bestValue.title}</p><p className="mt-1 text-orange-300">Based on rating Ã· price</p></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:996: <p className="mt-5 text-sm leading-6 text-slate-300">{cheapest.title} is the most affordable option. {highestRated.title} has the highest customer rating. {bestValue.title} offers the strongest rating-to-price ratio among the selected products. Choose based on your budget and priorities.</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1009: <div className="min-h-screen bg-[#FFF7ED] p-10 text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1011: <Link to="/" className="mt-5 inline-block text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1077: border-radius: 999px; padding: .65rem 1rem; color: #9a3412; background: rgba(255,255,255,.75);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1082: color: transparent; background: linear-gradient(105deg,#c2410c,#f97316 52%,#a16207);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1089: .lux-primary-btn { color: white; background: linear-gradient(110deg,#ea580c,#c2410c); box-shadow: 0 14px 30px rgba(194,65,12,.22); }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1091: .lux-secondary-btn { color: #7c2d12; border: 1px solid rgba(154,52,18,.2); background: rgba(255,255,255,.75); }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1098: .lux-benefit h4 { color: #292524; font-size: .9rem; font-weight: 800; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1099: .lux-benefit p { margin-top: .2rem; color: #78716c; font-size: .75rem; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1100: .lux-benefit-icon { display: grid; width: 2.6rem; height: 2.6rem; flex: none; place-items: center; border-radius: .85rem; color: #c2410c; background: #ffedd5; font-size: 1.2rem; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1102: .lux-gallery-label { display: flex; align-items: center; justify-content: center; gap: .55rem; margin-bottom: 1rem; color: #78716c; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1103: .lux-live-dot { width: .5rem; height: .5rem; border-radius: 50%; background: #16a34a; box-shadow: 0 0 0 5px rgba(22,163,74,.12); animation: ss-pulse 1.8s infinite; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1109: .lux-image-card { position: relative; flex: none; overflow: hidden; border: 4px solid rgba(255,255,255,.85); border-radius: 1.35rem; background: #f5f5f4; box-shadow: 0 14px 35px rgba(41,37,36,.1); }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1115: .lux-floating-icon { display: grid; width: 2.7rem; height: 2.7rem; place-items: center; border-radius: .9rem; color: white; background: linear-gradient(135deg,#f97316,#c2410c); font-size: 1.3rem; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1116: .lux-floating-card p { color: #c2410c; font-size: .62rem; font-weight: 800; letter-spacing: .1em; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\App.jsx:1117: .lux-floating-card h4 { margin-top: .2rem; color: #292524; font-size: .85rem; font-weight: 800; }
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:6: color: #f8fafc;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:7: background: #020617;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:120: --brand-primary: #f97316;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:121: --brand-hover: #ea580c;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:122: --brand-light: #fff7ed;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:123: --page-bg: #fffaf5;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:124: --surface-bg: #ffffff;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:125: --text-primary: #292524;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:126: --text-muted: #78716c;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:127: --border-color: #fed7aa;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:146: background: #fed7aa;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:147: color: #7c2d12;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:166: --primary-orange: #EA580C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:167: --accent-orange: #F97316;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:168: --warm-background: #FFF7ED;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:169: --heading-color: #292524;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:170: --card-background: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:171: --border-color: #E7E5E4;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:172: --footer-background: #292524;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:186: background: #FED7AA;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:187: color: #7C2D12;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:201: --shop-bg: #FAF7F2;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:202: --shop-surface: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:203: --shop-primary: #EA580C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:204: --shop-accent: #F97316;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:205: --shop-primary-hover: #C2410C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:206: --shop-text: #292524;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:207: --shop-muted: #78716C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:208: --shop-border: #E7E5E4;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:209: --shop-soft-orange: #FFF0E5;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:210: --shop-footer: #1C1917;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:236: [class~="bg-slate-950"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:237: [class~="bg-[#FFF7ED]"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:258: [class~="bg-slate-900"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:284: .text-slate-200,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:285: .text-slate-300,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:286: .text-slate-400,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:287: .text-gray-400 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:294: [class*="bg-orange-600"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:296: color: #FFFFFF !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:313: .text-orange-300,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:314: .text-orange-400,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:315: .text-orange-500,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:316: .text-orange-600 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:320: svg.text-orange-300,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:321: svg.text-orange-400,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:322: svg.text-orange-500 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:327: [class*="bg-orange-400/10"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:328: [class*="bg-orange-500/10"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:329: [class*="bg-orange-500/5"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:332: border-color: #FED7AA !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:339: .border-slate-200 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:347: background-color: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:355: color: #A8A29E;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:368: border-color: #FDBA74;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:375: color: #F5F5F4 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:387: color: #FB923C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:392: scrollbar-color: #FDBA74 var(--shop-bg);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:398: background: #FED7AA;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:399: color: #7C2D12;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:423: --lux-purple: #30205F;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:424: --lux-primary: #60408F;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:425: --lux-accent: #7651A8;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:426: --lux-lavender: #F0EDFA;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:427: --lux-soft: #F7F5FC;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:428: --lux-white: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:429: --lux-text: #24202D;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:430: --lux-muted: #777180;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:431: --lux-border: #E6E1EF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:450: [class*="bg-slate-950"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:451: [class*="bg-[#FFF7ED]"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:456: [class*="bg-slate-900"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:482: .text-slate-200,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:483: .text-slate-300 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:487: .text-slate-400,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:488: .text-gray-400 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:493: [class*="bg-orange-600"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:494: [class*="bg-orange-500"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:495: [class*="bg-orange-700"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:501: [class*="bg-orange-600"]:hover,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:502: [class*="bg-orange-500"]:hover {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:507: [class*="text-orange-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:508: [class*="text-violet-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:513: [class*="border-orange-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:514: [class*="border-violet-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:520: [class*="bg-orange-400/10"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:521: [class*="bg-orange-500/10"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:522: [class*="bg-orange-500/5"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:568: --lux-purple: #38206B;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:569: --lux-primary: #6336A0;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:570: --lux-accent: #8960C5;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:571: --lux-lavender: #E9DDFB;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:572: --lux-bg: #F5F0FC;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:573: --lux-white: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:574: --lux-text: #21172F;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:575: --lux-muted: #756B82;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:576: --lux-border: #E5DAF2;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:604: background: linear-gradient(135deg,#7650B5,#482779) !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:615: background: linear-gradient(135deg,#8D64CB,#38206B) !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:623: background: #FFFFFF !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:624: border: 1px solid #E8DFF3 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:637: [class*="text-orange-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:639: [class*="text-violet-"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:640: color: #7041A9 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:644: [class*="bg-orange-400/10"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:645: [class*="bg-orange-500/10"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:646: [class*="bg-orange-500/5"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:647: background: #EDE2FC !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:648: color: #6336A0 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:649: border: 1px solid #D8C5F1 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:654: border: 1px solid #DED2EE !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:655: background: #FFFFFF !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:656: color: #21172F !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:661: border-color: #8960C5 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:668: background: linear-gradient(135deg,#38206B,#211338) !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:669: color: #FFFFFF !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:679: background: #DCC8F6;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:680: color: #38206B;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:688: background: #A889D0;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:692: background: #F5F0FC;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:701: --glass-purple: #56318C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:702: --glass-primary: #7046A8;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:703: --glass-accent: #9872D0;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:704: --glass-dark: #281743;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:705: --glass-text: #292039;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:706: --glass-muted: #766B88;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:713: background: #F1EAFB !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:723: linear-gradient(135deg, #F8F4FF 0%, #EEE6FA 48%, #F7F1FF 100%) !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:731: [class~="bg-slate-900"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:732: [class~="bg-slate-950"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:794: [class*="bg-orange-500/5"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:795: [class*="bg-orange-400/10"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:796: [class*="bg-orange-500/10"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:812: #865DBD,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:813: #57318D 55%,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:814: #40236F
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:816: color: #FFFFFF !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:826: background: linear-gradient(125deg,#9B76D1,#57318D) !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:834: color: #292039 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:838: .text-slate-200,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:839: .text-slate-300 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:843: .text-slate-400,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:844: .text-gray-400 {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:848: [class*="text-orange-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:850: [class*="text-violet-"] {
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:860: #E6D8F8,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:861: #D7C2F1
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:863: color: #56318C !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:881: border-color: #9872D0 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:891: linear-gradient(135deg,#38205E,#211332) !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:892: color: #F8F4FF !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:900: color: #F8F4FF !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:910: background: #D9C4F5;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:911: color: #38205E;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:921: background: #EEE6FA;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:925: background: linear-gradient(#A98BD2,#68439C);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:939: linear-gradient(120deg, #F8F4FF, #EDE4FA 55%, #F7F1FF);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:973: color: #633A98;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:980: background: linear-gradient(110deg, #9870CE, #633A98, #3D216A);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1002: background: linear-gradient(120deg, #936BC8, #633A98 55%, #40236E);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1013: color: #573584 !important;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1043: background: linear-gradient(135deg, #E8D9FA, #D7C2F1);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1044: color: #603C91;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1050: color: #35234C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1057: color: #82748F;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1089: color: #55377D;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1098: background: #8A5BC0;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1151: background: #E6DDF2;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1230: background: linear-gradient(135deg, #9D79D0, #68439E);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1237: color: #8A70A9;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1245: color: #35234C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1271: linear-gradient(145deg, #F8F4FF, #EEE5FA);
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1357: --ss-navbar: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1358: --ss-sidebar: #F8F7F4;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1359: --ss-footer: #172554;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1360: --ss-background: #F8F7F4;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1361: --ss-card: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1363: --ss-primary: #F97316;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1364: --ss-primary-hover: #EA580C;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1365: --ss-link: #172554;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1366: --ss-price: #172554;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1368: --ss-discount-bg: #DCFCE7;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1369: --ss-discount-text: #166534;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1371: --ss-wishlist: #EF4444;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1372: --ss-ai: #8B5CF6;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1374: --ss-modal: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1375: --ss-success: #16A34A;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1376: --ss-error: #DC2626;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1378: --ss-input-border: #D1D5DB;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1379: --ss-text: #172554;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1380: --ss-muted: #64748B;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1405: color: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1416: button[class*="bg-orange-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1417: a[class*="bg-orange-"],
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1423: button[class*="bg-orange-"]:hover,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1424: a[class*="bg-orange-"]:hover,
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1473: color: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1479: color: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\index.css:1503: color: #FFFFFF;
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:19: <div className="rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:21: <p className="text-sm text-slate-400">{title}</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:22: <div className="rounded-xl bg-orange-500/10 p-3 text-orange-300"><Icon size={20} /></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:25: <p className="mt-1 text-xs text-slate-500">{detail}</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:98: <main className="min-h-screen bg-[#FFF7ED] px-4 py-8 text-stone-900 md:px-10">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:102: <div className="mb-2 flex items-center gap-2 text-orange-300"><LayoutDashboard size={18} /><span className="text-sm font-medium">SHOPSPHERE AI / ADMIN</span></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:104: <p className="mt-2 text-slate-400">Manage demo products and customer orders.</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:106: <a href="/" className="rounded-xl border border-slate-700 px-4 py-2 text-sm text-slate-300 hover:bg-slate-800">Back to Store</a>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:117: <section className="mt-8 rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:119: <div><h2 className="text-xl font-semibold">Product Management</h2><p className="mt-1 text-sm text-slate-400">Add or remove products in this browser demo.</p></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:120: <button onClick={() => setShowForm(!showForm)} className="flex items-center gap-2 rounded-xl bg-orange-600 px-4 py-2.5 text-sm font-semibold hover:bg-orange-500">{showForm ? <X size={17} /> : <Plus size={17} />}{showForm ? 'Close' : 'Add Product'}</button>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:124: <form onSubmit={handleAddProduct} className="mb-6 grid gap-3 rounded-xl border border-slate-700 bg-[#FFF7ED] p-4 md:grid-cols-2">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:125: <input required placeholder="Product name" value={form.title} onChange={e => setForm({ ...form, title: e.target.value })} className="rounded-lg border border-slate-700 bg-white px-3 py-3 outline-none focus:border-orange-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:126: <input required min="0.01" type="number" step="0.01" placeholder="Price" value={form.price} onChange={e => setForm({ ...form, price: e.target.value })} className="rounded-lg border border-slate-700 bg-white px-3 py-3 outline-none focus:border-orange-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:127: <input placeholder="Category" value={form.category} onChange={e => setForm({ ...form, category: e.target.value })} className="rounded-lg border border-slate-700 bg-white px-3 py-3 outline-none focus:border-orange-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:128: <input placeholder="Image URL (optional)" value={form.thumbnail} onChange={e => setForm({ ...form, thumbnail: e.target.value })} className="rounded-lg border border-slate-700 bg-white px-3 py-3 outline-none focus:border-orange-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:129: <button className="rounded-lg bg-orange-600 px-4 py-3 font-semibold hover:bg-orange-500 md:col-span-2">Save Product</button>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:133: <div className="mb-4 flex items-center gap-2 rounded-xl border border-slate-700 bg-[#FFF7ED] px-3"><Search size={18} className="text-slate-500" /><input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search products..." className="w-full bg-transparent py-3 text-sm outline-none" /></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:134: {isLoading ? <p className="py-8 text-center text-slate-400">Loading products...</p> : isError ? <p className="py-8 text-center text-red-400">Unable to load products. Please refresh.</p> : (
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:137: <thead className="text-xs uppercase text-slate-500"><tr><th className="py-3">Product</th><th>Category</th><th>Price</th><th>Rating</th><th className="text-right">Action</th></tr></thead>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:141: <td className="capitalize text-slate-400">{product.category}</td><td>{money(product.price)}</td><td className="text-amber-300">★ {product.rating ?? '—'}</td>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:146: {filteredProducts.length === 0 && <p className="py-8 text-center text-slate-400">No products found.</p>}
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:151: <section className="mt-8 rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:152: <div className="mb-5"><h2 className="text-xl font-semibold">Customer Orders</h2><p className="mt-1 text-sm text-slate-400">Review orders and update their demo status.</p></div>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:153: {orders.length === 0 ? <div className="rounded-xl border border-dashed border-slate-700 py-12 text-center"><ShoppingBag className="mx-auto mb-3 text-slate-600" size={30} /><p className="font-medium">No orders yet</p><p className="mt-1 text-sm text-slate-500">Place a test order from the storefront to see it here.</p></div> : (
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:155: <thead className="text-xs uppercase text-slate-500"><tr><th className="py-3">Order ID</th><th>Customer</th><th>Date</th><th>Total</th><th>Status</th></tr></thead>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:157: <td className="py-4 font-medium text-orange-300">{order.id}</td><td><p>{order.customer?.name || 'Guest'}</p><p className="text-xs text-slate-500">{order.customer?.email || 'No email'}</p></td><td className="text-slate-400">{order.date ? new Date(order.date).toLocaleDateString() : '—'}</td><td>{money(order.total)}</td>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:158: <td><select value={order.status || 'Order Placed'} onChange={e => updateOrderStatus(order.id, e.target.value)} className="rounded-lg border border-slate-700 bg-[#FFF7ED] px-2 py-2 text-xs outline-none"><option>Order Placed</option><option>Processing</option><option>Shipped</option><option>Out for Delivery</option><option>Delivered</option><option>Cancelled</option></select></td>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\AdminDashboard.jsx:163: <p className="mt-6 text-center text-xs text-slate-600">Demo admin panel · Data is stored locally in your browser · Not connected to a production backend</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:71: <div className="mb-1 flex items-center gap-2 text-orange-300">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:76: <p className="mt-1 text-sm text-slate-400">Insights calculated from orders saved in this browser.</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:80: <div className="rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:81: <div className="flex items-center justify-between text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:86: <p className="mt-1 text-xs text-slate-500">Based on order dates</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:88: <div className="rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:89: <div className="flex items-center justify-between text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:91: <PackageCheck className="text-orange-300" size={20} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:94: <p className="mt-1 text-xs text-slate-500">Average total per order</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:96: <div className="rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:97: <div className="flex items-center justify-between text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:102: <p className="mt-1 text-xs text-slate-500">Customers with more than one order</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:107: <div className="rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:109: <p className="mb-6 mt-1 text-sm text-slate-400">Revenue for the latest six calendar months</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:110: <div className="flex h-52 items-end gap-3 border-b border-slate-700 pb-2">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:113: <span className="text-[10px] text-slate-400">{month.total ? money(month.total) : '$0'}</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:115: className="w-full max-w-12 rounded-t-lg bg-orange-500 transition-all"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:119: <span className="text-xs text-slate-400">{month.label}</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:125: <div className="rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:127: <p className="mb-5 mt-1 text-sm text-slate-400">Current distribution of demo orders</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:132: <span className="text-slate-300">{item.status}</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:135: <div className="h-2 overflow-hidden rounded-full bg-slate-800">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:136: <div className="h-full rounded-full bg-orange-500" style={{ width: `${(item.count / maxStatusCount) * 100}%` }} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:144: <div className="rounded-2xl border border-slate-800 bg-white p-5">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:149: <p className="text-sm text-slate-400">Ranked by quantity in simulated orders</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:153: <p className="rounded-xl border border-dashed border-slate-700 py-8 text-center text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:159: <thead className="text-xs uppercase text-slate-500">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:165: <td className="py-3"><span className="mr-3 text-orange-300">#{index + 1}</span><span className="text-slate-200">{product.title}</span></td>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\admin\SalesAnalytics.jsx:166: <td className="text-slate-300">{product.quantity}</td>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:292: <section className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-xl dark:border-slate-800 dark:bg-[#FFF7ED]">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:294: <div className="flex items-center gap-4 border-b border-stone-200 bg-orange-50 p-5 dark:border-slate-800 dark:bg-white">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:295: <div className="rounded-2xl bg-orange-600 p-3 text-white">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:300: <h2 className="font-bold text-[#29213A]">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:303: <p className="text-sm text-slate-500">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:311: className="flex items-center gap-2 rounded-xl border border-stone-200 px-3 py-2 text-xs font-semibold text-slate-600 transition hover:border-red-400 hover:text-red-500 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:text-slate-300"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:330: ? 'bg-slate-800 text-white'
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:331: : 'bg-orange-600 text-white'
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:347: ? 'rounded-tr-sm bg-[#633A98] text-white'
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:348: : 'rounded-tl-sm bg-slate-100 text-slate-800 dark:bg-white dark:text-slate-200'
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:359: className="overflow-hidden rounded-2xl border border-stone-200 bg-white dark:border-slate-800 dark:bg-white"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:364: className="h-36 w-full bg-orange-50 object-contain p-3"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:369: <h3 className="line-clamp-1 text-sm font-semibold text-[#29213A]">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:374: <span className="font-bold text-orange-600">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:384: className="mt-3 block rounded-xl bg-white px-3 py-2 text-center text-xs font-semibold text-white hover:bg-orange-600 dark:bg-orange-600"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:392: className="flex items-center justify-center gap-1 rounded-lg bg-orange-600 px-2 py-2 text-xs font-semibold text-white transition hover:bg-orange-700"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:399: className="flex items-center justify-center gap-1 rounded-lg border border-[#CDBBE5] bg-[#F8F4FF] px-2 py-2 text-xs font-semibold text-[#573584] transition hover:border-[#633A98] hover:bg-[#EDE3FA]"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:415: <div className="flex items-center gap-3 text-sm text-slate-500">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:416: <Bot size={20} className="text-orange-600" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:425: <div className="border-t border-stone-200 px-5 pt-4 dark:border-slate-800">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:426: <p className="mb-3 flex items-center gap-2 text-xs font-semibold text-slate-500">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:436: className="rounded-full border border-stone-200 px-3 py-2 text-xs text-slate-600 transition hover:border-orange-500 hover:text-orange-600 dark:border-slate-700 dark:text-slate-300"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:454: className="min-w-0 flex-1 rounded-2xl border border-stone-200 bg-orange-50 px-4 py-3 text-sm text-stone-900 outline-none focus:border-orange-500 dark:border-slate-700 dark:bg-white dark:text-white"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:460: className="rounded-2xl bg-orange-600 px-5 text-white transition hover:bg-orange-700 disabled:cursor-not-allowed disabled:opacity-50"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\assistant\components\AssistantChat.jsx:467: <div className="flex items-center justify-center gap-2 pb-4 text-xs text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:43: <div className="min-h-screen bg-orange-50 flex items-center justify-center px-4 py-12">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:46: <ShoppingBag className="text-orange-600" size={30} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:47: <span className="text-2xl font-bold text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:48: ShopSphere <span className="text-orange-600">AI</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:53: <h1 className="text-3xl font-bold text-stone-900">Welcome Back!</h1>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:54: <p className="text-slate-500 mt-2">Login to continue shopping</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:61: <Mail className="absolute left-3 top-3.5 text-slate-400" size={19} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:69: className="w-full border border-stone-200 rounded-xl py-3 pl-11 pr-4 outline-none focus:ring-2 focus:ring-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:77: <Lock className="absolute left-3 top-3.5 text-slate-400" size={19} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:85: className="w-full border border-stone-200 rounded-xl py-3 pl-11 pr-12 outline-none focus:ring-2 focus:ring-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:90: className="absolute right-3 top-3 text-slate-400"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:101: className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 rounded-xl transition"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:107: <p className="text-center text-sm text-slate-500 mt-7">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Login.jsx:109: <Link to="/signup" className="text-orange-600 font-semibold">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:28: <div className="min-h-screen bg-[#FFF7ED] text-stone-900 flex flex-col items-center justify-center px-4">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:29: <User size={50} className="text-orange-400 mb-4" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:31: <p className="text-slate-400 mt-2 mb-6">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:36: className="bg-orange-600 px-6 py-3 rounded-xl"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:88: <div className="min-h-screen bg-[#FFF7ED] text-stone-900 px-5 py-12">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:91: <p className="text-orange-400 text-sm font-semibold uppercase tracking-widest">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:95: <p className="text-slate-400 mt-2">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:102: <div className="w-20 h-20 rounded-full bg-orange-600 flex items-center justify-center">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:108: <p className="text-slate-400">{user.email}</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:109: <span className="text-xs text-orange-400 mt-2 inline-block">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:122: className="flex items-center gap-2 text-orange-400 hover:text-orange-300"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:132: <label className="text-sm text-slate-400 mb-2 block">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:138: className="absolute left-4 top-4 text-slate-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:147: className="w-full bg-slate-800 border border-white/10 rounded-xl py-3 pl-12 pr-4 outline-none focus:border-orange-500 disabled:opacity-70"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:153: <label className="text-sm text-slate-400 mb-2 block">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:159: className="absolute left-4 top-4 text-slate-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:168: className="w-full bg-slate-800 border border-white/10 rounded-xl py-3 pl-12 pr-4 outline-none focus:border-orange-500 disabled:opacity-70"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:177: className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 px-6 py-3 rounded-xl font-semibold"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:186: className="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-xl"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:198: <ShoppingBag className="text-orange-400" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:199: <span className="text-slate-300">Continue shopping</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Profile.jsx:204: className="text-orange-400 hover:text-orange-300"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:50: <div className="min-h-screen bg-orange-50 flex items-center justify-center px-4 py-12">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:53: <ShoppingBag className="text-orange-600" size={30} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:54: <span className="text-2xl font-bold text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:55: ShopSphere <span className="text-orange-600">AI</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:60: <h1 className="text-3xl font-bold text-stone-900">Create Account</h1>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:61: <p className="text-slate-500 mt-2">Join ShopSphere AI today</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:68: <User className="absolute left-3 top-3.5 text-slate-400" size={19} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:76: className="w-full border border-stone-200 rounded-xl py-3 pl-11 pr-4 outline-none focus:ring-2 focus:ring-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:84: <Mail className="absolute left-3 top-3.5 text-slate-400" size={19} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:92: className="w-full border border-stone-200 rounded-xl py-3 pl-11 pr-4 outline-none focus:ring-2 focus:ring-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:100: <Lock className="absolute left-3 top-3.5 text-slate-400" size={19} />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:109: className="w-full border border-stone-200 rounded-xl py-3 pl-11 pr-12 outline-none focus:ring-2 focus:ring-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:114: className="absolute right-3 top-3 text-slate-400"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:119: <p className="text-xs text-slate-400 mt-2">Minimum 6 characters</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:126: className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 rounded-xl transition flex items-center justify-center gap-2"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:133: <p className="text-center text-sm text-slate-500 mt-7">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\auth\Signup.jsx:135: <Link to="/login" className="text-orange-600 font-semibold">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:32: <main className="min-h-screen bg-[#FFF7ED] px-6 py-12 text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:46: <p className="mt-3 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:52: className="mt-6 inline-block rounded-xl bg-orange-600 px-6 py-3 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:75: <p className="mt-2 text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:88: className="rounded bg-slate-700 px-3 py-1 disabled:opacity-40"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:103: className="rounded bg-slate-700 px-3 py-1 disabled:opacity-40"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:126: className="mt-6 block rounded-xl bg-orange-600 py-4 text-center font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\cart\Cart.jsx:137: <p className="text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:58: <main className="min-h-screen bg-[#FFF7ED] p-10 text-center text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:60: <Link to="/products" className="mt-6 inline-block text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:68: <main className="min-h-screen bg-[#FFF7ED] px-6 py-12 text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:70: <Link to="/cart" className="text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:92: <label className="mb-2 block text-sm text-slate-300">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:102: className="w-full rounded-lg border border-white/10 bg-slate-800 px-4 py-3 outline-none focus:border-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:110: className="w-full rounded-xl bg-orange-600 py-3 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:121: <span className="text-slate-300">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\Checkout.jsx:133: <p className="mt-4 text-xs text-slate-500">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:13: <main className="flex min-h-screen items-center justify-center bg-[#FFF7ED] px-5 text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:25: <p className="mt-4 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:31: <div className="mt-8 rounded-xl bg-slate-800 p-5 text-left">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:33: <Package className="text-orange-400" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:37: <p className="mt-4 text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:42: <p className="mt-4 text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:45: <p className="text-xl font-bold text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:49: <p className="mt-4 text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderSuccess.jsx:60: className="mt-8 flex items-center justify-center gap-2 rounded-xl bg-orange-600 py-4 font-semibold hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:11: <main className="min-h-screen bg-[#FFF7ED] px-6 py-12 text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:14: <Link to="/products" className="flex items-center gap-2 text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:23: <p className="mb-10 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:29: <Package size={45} className="mx-auto mb-4 text-slate-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:31: <p className="mt-3 text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:44: <p className="text-sm text-slate-400">Order ID</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:55: <p className="text-sm text-slate-400">Total Amount</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:62: <p className="text-sm text-slate-400">Items</p>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:76: <div className="ml-2 my-2 h-6 border-l border-dashed border-slate-600" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:79: <Clock className="text-slate-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:80: <span className="text-slate-400">Processing - Upcoming</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:83: <div className="ml-2 my-2 h-6 border-l border-dashed border-slate-600" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:86: <Package className="text-slate-500" />
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\checkout\OrderTracking.jsx:87: <span className="text-slate-400">Delivered - Upcoming</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:82: <div className="min-h-screen bg-orange-50 px-4 py-10">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:87: className="mb-8 inline-flex items-center gap-2 text-gray-600 hover:text-black"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:96: <div className="flex items-center justify-center rounded-xl bg-gray-100 p-6">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:105: <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-orange-600">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:109: <h1 className="mb-4 text-3xl font-bold text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:113: <p className="mb-5 leading-7 text-gray-600">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:120: <span className="text-gray-500">Customer rating</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:124: <span className="text-3xl font-bold text-stone-900">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:133: <p className="mb-6 text-sm text-gray-500">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:140: className="flex items-center gap-2 rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white hover:bg-orange-700"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:148: className="flex items-center gap-2 rounded-lg border border-gray-300 px-6 py-3 font-semibold text-gray-700 hover:bg-gray-100"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:161: <section className="mt-12 rounded-2xl bg-[#FFF7ED] p-6 md:p-8">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:163: <p className="mb-2 text-sm font-medium text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:171: <p className="mt-2 text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:177: <p className="text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:194: <p className="text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:207: <p className="mb-1 text-sm font-medium text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\products\ProductDetails.jsx:215: <p className="mt-2 text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecentlyViewedRail.jsx:22: <p className="mb-1 text-sm font-medium text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecentlyViewedRail.jsx:30: <p className="mt-2 text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:28: <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white transition duration-300 hover:-translate-y-1 hover:border-orange-500/50">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:30: <div className="relative aspect-square overflow-hidden bg-slate-800">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:46: className="absolute right-3 top-3 rounded-full bg-[#FFF7ED]/80 p-2 text-stone-900 transition hover:bg-orange-600"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:56: <span className="absolute left-3 top-3 rounded-full bg-orange-600 px-3 py-1 text-xs font-semibold text-white">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:64: <p className="mb-2 text-xs capitalize text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:69: <h3 className="mb-2 line-clamp-1 font-semibold text-white transition hover:text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:77: <span className="text-slate-500">/ 5</span>
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:85: <span className="text-xs text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationCard.jsx:93: className="flex w-full items-center justify-center gap-2 rounded-xl bg-orange-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-orange-500"
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationRail.jsx:32: <p className="text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationRail.jsx:47: <p className="mb-1 text-sm font-medium text-orange-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationRail.jsx:56: <p className="mt-2 text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\features\recommendations\components\RecommendationRail.jsx:62: <span className="text-sm text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\pages\AssistantPage.jsx:20: <main className="min-h-screen bg-orange-50 px-4 py-12 dark:bg-[#FFF7ED]">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\pages\AssistantPage.jsx:22: <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-orange-100 px-4 py-2 text-sm font-semibold text-orange-700 dark:bg-orange-950 dark:text-orange-300">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\pages\AssistantPage.jsx:27: <h1 className="text-3xl font-bold text-stone-900 dark:text-white sm:text-5xl">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\pages\AssistantPage.jsx:31: <p className="mx-auto mt-4 max-w-2xl text-slate-600 dark:text-slate-400">
+C:\Users\vamsi\OneDrive\Desktop\Internmo\shopsphere-ai\src\pages\AssistantPage.jsx:38: <p className="py-12 text-center text-slate-500">

@@ -1,28 +1,23 @@
-
-import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { Heart, ShoppingCart, Star } from 'lucide-react'
-import { addToCart } from '../../../store/slices/cartSlice'
-import { toggleWishlist } from '../../../store/slices/wishlistSlice'
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { Heart, ShoppingCart, Star } from "lucide-react";
+import { addToCart } from "../../../store/slices/cartSlice";
+import { toggleWishlist } from "../../../store/slices/wishlistSlice";
 
 function RecommendationCard({ product }) {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const wishlistItems = useSelector(
-    state => state.wishlist.items
-  )
+  const wishlistItems = useSelector((state) => state.wishlist.items);
 
-  const isWishlisted = wishlistItems.some(
-    item => item.id === product.id
-  )
+  const isWishlisted = wishlistItems.some((item) => item.id === product.id);
 
   const handleAddToCart = () => {
-    dispatch(addToCart(product))
-  }
+    dispatch(addToCart(product));
+  };
 
   const handleWishlist = () => {
-    dispatch(toggleWishlist(product))
-  }
+    dispatch(toggleWishlist(product));
+  };
 
   return (
     <article className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-900 transition duration-300 hover:-translate-y-1 hover:border-orange-500/50">
@@ -40,15 +35,13 @@ function RecommendationCard({ product }) {
         <button
           type="button"
           onClick={handleWishlist}
-          aria-label={
-            isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'
-          }
+          aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
           className="absolute right-3 top-3 rounded-full bg-slate-950/80 p-2 text-white transition hover:bg-orange-600"
         >
           <Heart
             size={18}
-            fill={isWishlisted ? 'currentColor' : 'none'}
-            className={isWishlisted ? 'text-pink-400' : ''}
+            fill={isWishlisted ? "currentColor" : "none"}
+            className={isWishlisted ? "text-pink-400" : ""}
           />
         </button>
 
@@ -83,7 +76,7 @@ function RecommendationCard({ product }) {
           </span>
 
           <span className="text-xs text-slate-400">
-            {product.availabilityStatus || 'Available'}
+            {product.availabilityStatus || "Available"}
           </span>
         </div>
 
@@ -97,7 +90,7 @@ function RecommendationCard({ product }) {
         </button>
       </div>
     </article>
-  )
+  );
 }
 
-export default RecommendationCard
+export default RecommendationCard;

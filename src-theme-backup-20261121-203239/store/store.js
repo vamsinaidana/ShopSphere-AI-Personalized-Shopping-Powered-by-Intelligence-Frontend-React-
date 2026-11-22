@@ -1,10 +1,9 @@
+import { configureStore } from "@reduxjs/toolkit";
 
-import { configureStore } from '@reduxjs/toolkit'
-
-import cartReducer from './slices/cartSlice'
-import wishlistReducer from './slices/wishlistSlice'
-import authReducer from './slices/authSlice'
-import compareReducer from './slices/compareSlice'
+import cartReducer from "./slices/cartSlice";
+import wishlistReducer from "./slices/wishlistSlice";
+import authReducer from "./slices/authSlice";
+import compareReducer from "./slices/compareSlice";
 
 export const store = configureStore({
   reducer: {
@@ -13,4 +12,4 @@ export const store = configureStore({
     auth: authReducer,
     compare: compareReducer,
   },
-})
+});

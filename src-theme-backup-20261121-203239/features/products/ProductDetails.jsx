@@ -1,23 +1,22 @@
+import { useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useParams, Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { ArrowLeft, ShoppingCart, Heart, Star } from "lucide-react";
 
-import { useEffect } from 'react'
-import { useQuery } from '@tanstack/react-query'
-import { useParams, Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import { ArrowLeft, ShoppingCart, Heart, Star } from 'lucide-react'
+import { getProductById, getProducts } from "../../services/productService";
+import { addToCart } from "../../store/slices/cartSlice";
+import { toggleWishlist } from "../../store/slices/wishlistSlice";
+import { addRecentlyViewed } from "../../utils/recentlyViewed";
 
-import { getProductById, getProducts } from '../../services/productService'
-import { addToCart } from '../../store/slices/cartSlice'
-import { toggleWishlist } from '../../store/slices/wishlistSlice'
-import { addRecentlyViewed } from '../../utils/recentlyViewed'
-
-import useRecommendations from '../recommendations/hooks/useRecommendations'
-import RecommendationCard from '../recommendations/components/RecommendationCard'
+import useRecommendations from "../recommendations/hooks/useRecommendations";
+import RecommendationCard from "../recommendations/components/RecommendationCard";
 
 export default function ProductDetails() {
-  const { id } = useParams()
-  const dispatch = useDispatch()
+  const { id } = useParams();
+  const dispatch = useDispatch();
 
-  const wishlist = useSelector(state => state.wishlist.items)
+  const wishlist = useSelector((state) => state.wishlist.items);
 
   // Fetch current product
   const {
@@ -25,61 +24,56 @@ export default function ProductDetails() {
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ['product', id],
+    queryKey: ["product", id],
     queryFn: () => getProductById(id),
-  })
+  });
 
   // Fetch products for Similar Products recommendations
-  const {
-    data: allProductsData,
-  } = useQuery({
-    queryKey: ['similar-products'],
+  const { data: allProductsData } = useQuery({
+    queryKey: ["similar-products"],
     queryFn: () => getProducts(100),
-  })
+  });
 
-  const allProducts = allProductsData?.products || []
+  const allProducts = allProductsData?.products || [];
 
   // Recently Viewed tracking
   useEffect(() => {
     if (product) {
-      addRecentlyViewed(product)
+      addRecentlyViewed(product);
     }
-  }, [product])
+  }, [product]);
 
   // Similar Products recommendation hook
+  const { recommendations: similarProducts, loading: similarLoading } =
+    useRecommendations({
+      products: allProducts,
+      currentProduct: product,
+      strategy: "similar",
+      limit: 4,
+    });
   const {
-    recommendations: similarProducts,
-    loading: similarLoading,
+    recommendations: frequentlyBoughtTogether,
+    loading: frequentlyBoughtLoading,
   } = useRecommendations({
     products: allProducts,
     currentProduct: product,
-    strategy: 'similar',
+    strategy: "frequently-bought-together",
     limit: 4,
-  })
-  const {
-  recommendations: frequentlyBoughtTogether,
-  loading: frequentlyBoughtLoading,
-} = useRecommendations({
-  products: allProducts,
-  currentProduct: product,
-  strategy: 'frequently-bought-together',
-  limit: 4,
-})
+  });
 
   if (isLoading) {
-    return <div className="p-10 text-center">Loading product...</div>
+    return <div className="p-10 text-center">Loading product...</div>;
   }
 
   if (isError || !product) {
-    return <div className="p-10 text-center">Unable to load product.</div>
+    return <div className="p-10 text-center">Unable to load product.</div>;
   }
 
-  const isWishlisted = wishlist.some(item => item.id === product.id)
+  const isWishlisted = wishlist.some((item) => item.id === product.id);
 
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-10">
       <div className="mx-auto max-w-6xl">
-
         <Link
           to="/products"
           className="mb-8 inline-flex items-center gap-2 text-gray-600 hover:text-black"
@@ -90,7 +84,6 @@ export default function ProductDetails() {
 
         {/* Product Details */}
         <div className="grid gap-10 rounded-2xl bg-white p-6 shadow-sm md:grid-cols-2 md:p-10">
-
           <div className="flex items-center justify-center rounded-xl bg-gray-100 p-6">
             <img
               src={product.thumbnail}
@@ -147,9 +140,9 @@ export default function ProductDetails() {
               >
                 <Heart
                   size={19}
-                  className={isWishlisted ? 'fill-red-500 text-red-500' : ''}
+                  className={isWishlisted ? "fill-red-500 text-red-500" : ""}
                 />
-                {isWishlisted ? 'Wishlisted' : 'Add to Wishlist'}
+                {isWishlisted ? "Wishlisted" : "Add to Wishlist"}
               </button>
             </div>
           </div>
@@ -162,9 +155,7 @@ export default function ProductDetails() {
               ShopSphere AI
             </p>
 
-            <h2 className="text-2xl font-bold text-white">
-              Similar Products
-            </h2>
+            <h2 className="text-2xl font-bold text-white">Similar Products</h2>
 
             <p className="mt-2 text-sm text-slate-400">
               Products selected based on category, tags and price similarity.
@@ -172,63 +163,47 @@ export default function ProductDetails() {
           </div>
 
           {similarLoading && (
-            <p className="text-slate-400">
-              Finding similar products...
-            </p>
+            <p className="text-slate-400">Finding similar products...</p>
           )}
 
           {!similarLoading && similarProducts.length > 0 && (
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {similarProducts.map(item => (
-                <RecommendationCard
-                  key={item.id}
-                  product={item}
-                />
+              {similarProducts.map((item) => (
+                <RecommendationCard key={item.id} product={item} />
               ))}
             </div>
           )}
 
           {!similarLoading && similarProducts.length === 0 && (
-            <p className="text-slate-400">
-              No similar products found.
-            </p>
-
-
-
-            
+            <p className="text-slate-400">No similar products found.</p>
           )}
 
-{/* Frequently Bought Together */}
-{frequentlyBoughtTogether.length > 0 && (
-  <section className="py-10">
-    <div className="mb-6">
-      <p className="mb-1 text-sm font-medium text-orange-400">
-        ShopSphere AI
-      </p>
+          {/* Frequently Bought Together */}
+          {frequentlyBoughtTogether.length > 0 && (
+            <section className="py-10">
+              <div className="mb-6">
+                <p className="mb-1 text-sm font-medium text-orange-400">
+                  ShopSphere AI
+                </p>
 
-      <h2 className="text-2xl font-bold text-white">
-        Frequently Bought Together
-      </h2>
+                <h2 className="text-2xl font-bold text-white">
+                  Frequently Bought Together
+                </h2>
 
-      <p className="mt-2 text-sm text-slate-400">
-        Products commonly purchased together based on order history.
-      </p>
-    </div>
+                <p className="mt-2 text-sm text-slate-400">
+                  Products commonly purchased together based on order history.
+                </p>
+              </div>
 
-    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-      {frequentlyBoughtTogether.map(item => (
-        <RecommendationCard
-          key={item.id}
-          product={item}
-        />
-      ))}
-    </div>
-  </section>
-)}
-          
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                {frequentlyBoughtTogether.map((item) => (
+                  <RecommendationCard key={item.id} product={item} />
+                ))}
+              </div>
+            </section>
+          )}
         </section>
-
       </div>
     </div>
-  )
+  );
 }

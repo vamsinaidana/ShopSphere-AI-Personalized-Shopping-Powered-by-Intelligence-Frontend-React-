@@ -1,30 +1,21 @@
-
-import { Link } from 'react-router-dom'
-import { CheckCircle, Package, ArrowRight } from 'lucide-react'
+import { Link } from "react-router-dom";
+import { CheckCircle, Package, ArrowRight } from "lucide-react";
 
 export default function OrderSuccess() {
-  const orders = JSON.parse(
-    localStorage.getItem('shopsphere_orders') || '[]'
-  )
+  const orders = JSON.parse(localStorage.getItem("shopsphere_orders") || "[]");
 
-  const order = orders[0]
+  const order = orders[0];
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-[#FFF7ED] px-5 text-stone-900">
       <div className="w-full max-w-lg rounded-3xl border border-white/10 bg-white p-8 text-center">
+        <CheckCircle size={75} className="mx-auto mb-6 text-green-400" />
 
-        <CheckCircle
-          size={75}
-          className="mx-auto mb-6 text-green-400"
-        />
-
-        <h1 className="text-3xl font-bold">
-          Order Placed Successfully!
-        </h1>
+        <h1 className="text-3xl font-bold">Order Placed Successfully!</h1>
 
         <p className="mt-4 text-slate-400">
-          Thank you for shopping with ShopSphere AI.
-          Your order has been placed successfully.
+          Thank you for shopping with ShopSphere AI. Your order has been placed
+          successfully.
         </p>
 
         {order && (
@@ -34,24 +25,16 @@ export default function OrderSuccess() {
               <span className="font-semibold">Order Details</span>
             </div>
 
-            <p className="mt-4 text-sm text-slate-400">
-              Order ID
-            </p>
+            <p className="mt-4 text-sm text-slate-400">Order ID</p>
             <p className="font-semibold">{order.id}</p>
 
-            <p className="mt-4 text-sm text-slate-400">
-              Total Amount
-            </p>
+            <p className="mt-4 text-sm text-slate-400">Total Amount</p>
             <p className="text-xl font-bold text-orange-400">
               ${order.total.toFixed(2)}
             </p>
 
-            <p className="mt-4 text-sm text-slate-400">
-              Status
-            </p>
-            <p className="font-semibold text-green-400">
-              {order.status}
-            </p>
+            <p className="mt-4 text-sm text-slate-400">Status</p>
+            <p className="font-semibold text-green-400">{order.status}</p>
           </div>
         )}
 
@@ -62,8 +45,7 @@ export default function OrderSuccess() {
           Continue Shopping
           <ArrowRight size={18} />
         </Link>
-
       </div>
     </main>
-  )
+  );
 }

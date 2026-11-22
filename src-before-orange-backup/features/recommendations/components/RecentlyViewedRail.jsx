@@ -1,19 +1,16 @@
-
-import { useEffect, useState } from 'react'
-import {
-  getRecentlyViewed,
-} from '../../../utils/recentlyViewed'
-import RecommendationCard from './RecommendationCard'
+import { useEffect, useState } from "react";
+import { getRecentlyViewed } from "../../../utils/recentlyViewed";
+import RecommendationCard from "./RecommendationCard";
 
 function RecentlyViewedRail() {
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(getRecentlyViewed())
-  }, [])
+    setProducts(getRecentlyViewed());
+  }, []);
 
   if (products.length === 0) {
-    return null
+    return null;
   }
 
   return (
@@ -23,9 +20,7 @@ function RecentlyViewedRail() {
           Your Browsing History
         </p>
 
-        <h2 className="text-2xl font-bold text-white">
-          Recently Viewed
-        </h2>
+        <h2 className="text-2xl font-bold text-white">Recently Viewed</h2>
 
         <p className="mt-2 text-sm text-slate-400">
           Continue exploring products you viewed earlier.
@@ -33,15 +28,12 @@ function RecentlyViewedRail() {
       </div>
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {products.map(product => (
-          <RecommendationCard
-            key={product.id}
-            product={product}
-          />
+        {products.map((product) => (
+          <RecommendationCard key={product.id} product={product} />
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default RecentlyViewedRail
+export default RecentlyViewedRail;

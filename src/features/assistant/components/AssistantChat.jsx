@@ -1,5 +1,5 @@
-﻿import { useEffect, useRef, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useEffect, useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 import {
   Bot,
   Send,
@@ -9,284 +9,284 @@ import {
   Trash2,
   Heart,
   ShoppingCart,
-} from 'lucide-react'
-import { processShoppingQuery } from '../services/assistantService'
-import { addToCart } from '../../../store/slices/cartSlice'
-import { toggleWishlist } from '../../../store/slices/wishlistSlice'
+} from "lucide-react";
+import { processShoppingQuery } from "../services/assistantService";
+import { addToCart } from "../../../store/slices/cartSlice";
+import { toggleWishlist } from "../../../store/slices/wishlistSlice";
 
 const SUGGESTIONS = [
-  'Show me smartphones under 30000',
-  'Show me laptops with good ratings',
-  'Find skincare products',
-  'Add the cheapest product to cart',
-]
+  "Show me smartphones under 30000",
+  "Show me laptops with good ratings",
+  "Find skincare products",
+  "Add the cheapest product to cart",
+];
 
 const INITIAL_MESSAGE = {
-  role: 'assistant',
-  text: "Hi! I'm ShopSphere AI. ðŸ‘‹ Tell me what you're looking for, and I'll help you find the right products. You can also ask me to add a result to your cart or wishlist.",
+  role: "assistant",
+  text: "Hi! I'm ShopSphere AI.  Tell me what you're looking for, and I'll help you find the right products. You can also ask me to add a result to your cart or wishlist.",
   products: [],
-}
+};
 
-const handleFollowUpQuery = (
-  message,
-  previousResults,
-  displayedProducts
-) => {
-  const text = message.toLowerCase()
+const handleFollowUpQuery = (message, previousResults, displayedProducts) => {
+  const text = message.toLowerCase();
 
   if (!previousResults.length || !displayedProducts.length) {
-    return null
+    return null;
   }
 
   const averagePrice =
-    displayedProducts.reduce(
-      (sum, product) => sum + product.price,
-      0
-    ) / displayedProducts.length
+    displayedProducts.reduce((sum, product) => sum + product.price, 0) /
+    displayedProducts.length;
 
   const averageRating =
-    displayedProducts.reduce(
-      (sum, product) => sum + (product.rating || 0),
-      0
-    ) / displayedProducts.length
+    displayedProducts.reduce((sum, product) => sum + (product.rating || 0), 0) /
+    displayedProducts.length;
 
   if (/cheaper|cheapest|less expensive|lower price/i.test(text)) {
     return previousResults
-      .filter(product => product.price < averagePrice)
-      .sort((a, b) => a.price - b.price)
+      .filter((product) => product.price < averagePrice)
+      .sort((a, b) => a.price - b.price);
   }
 
   if (/more expensive|costlier|higher price/i.test(text)) {
     return previousResults
-      .filter(product => product.price > averagePrice)
-      .sort((a, b) => b.price - a.price)
+      .filter((product) => product.price > averagePrice)
+      .sort((a, b) => b.price - a.price);
   }
 
   if (/better rated|higher rated|higher rating/i.test(text)) {
     return previousResults
-      .filter(product => (product.rating || 0) > averageRating)
-      .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+      .filter((product) => (product.rating || 0) > averageRating)
+      .sort((a, b) => (b.rating || 0) - (a.rating || 0));
   }
 
-  return null
-}
+  return null;
+};
 
 // Converts requests such as "add the cheapest one to cart" into a product action.
 const getShoppingAction = (message, previousResults, displayedProducts) => {
-  const text = message.toLowerCase()
-  const wantsCart = /\b(cart|basket)\b/.test(text) &&
-    /\b(add|put|move|send)\b/.test(text)
-  const wantsWishlist = /\b(wishlist|wish list|save)\b/.test(text) &&
-    /\b(add|put|move|save)\b/.test(text)
+  const text = message.toLowerCase();
+  const wantsCart =
+    /\b(cart|basket)\b/.test(text) && /\b(add|put|move|send)\b/.test(text);
+  const wantsWishlist =
+    /\b(wishlist|wish list|save)\b/.test(text) &&
+    /\b(add|put|move|save)\b/.test(text);
 
-  if (!wantsCart && !wantsWishlist) return null
+  if (!wantsCart && !wantsWishlist) return null;
 
   const candidates = previousResults.length
     ? previousResults
-    : displayedProducts
+    : displayedProducts;
 
   if (!candidates.length) {
-    return { type: wantsCart ? 'cart' : 'wishlist', product: null }
+    return { type: wantsCart ? "cart" : "wishlist", product: null };
   }
 
-  let product = null
-  const ordinalMatch = text.match(/\b(first|1st|second|2nd|third|3rd|fourth|4th)\b/)
+  let product = null;
+  const ordinalMatch = text.match(
+    /\b(first|1st|second|2nd|third|3rd|fourth|4th)\b/,
+  );
   const ordinals = {
-    first: 0, '1st': 0,
-    second: 1, '2nd': 1,
-    third: 2, '3rd': 2,
-    fourth: 3, '4th': 3,
-  }
+    first: 0,
+    "1st": 0,
+    second: 1,
+    "2nd": 1,
+    third: 2,
+    "3rd": 2,
+    fourth: 3,
+    "4th": 3,
+  };
 
   if (ordinalMatch) {
-    product = displayedProducts[ordinals[ordinalMatch[0]]] || candidates[ordinals[ordinalMatch[0]]]
+    product =
+      displayedProducts[ordinals[ordinalMatch[0]]] ||
+      candidates[ordinals[ordinalMatch[0]]];
   } else if (/\b(cheapest|lowest price|least expensive)\b/.test(text)) {
-    product = [...candidates].sort((a, b) => a.price - b.price)[0]
+    product = [...candidates].sort((a, b) => a.price - b.price)[0];
   } else if (/\b(most expensive|costliest|highest price)\b/.test(text)) {
-    product = [...candidates].sort((a, b) => b.price - a.price)[0]
+    product = [...candidates].sort((a, b) => b.price - a.price)[0];
   } else if (/\b(highest rated|best rated|top rated)\b/.test(text)) {
-    product = [...candidates].sort((a, b) => (b.rating || 0) - (a.rating || 0))[0]
+    product = [...candidates].sort(
+      (a, b) => (b.rating || 0) - (a.rating || 0),
+    )[0];
   } else {
-    product = displayedProducts[0] || candidates[0]
+    product = displayedProducts[0] || candidates[0];
   }
 
   return {
-    type: wantsCart ? 'cart' : 'wishlist',
+    type: wantsCart ? "cart" : "wishlist",
     product: product || null,
-  }
-}
+  };
+};
 
 function AssistantChat({ products = [] }) {
-  const dispatch = useDispatch()
-  const [input, setInput] = useState('')
-  const [messages, setMessages] = useState([INITIAL_MESSAGE])
-  const [loading, setLoading] = useState(false)
+  const dispatch = useDispatch();
+  const [input, setInput] = useState("");
+  const [messages, setMessages] = useState([INITIAL_MESSAGE]);
+  const [loading, setLoading] = useState(false);
 
-  const [lastResults, setLastResults] = useState([])
-  const [lastDisplayedProducts, setLastDisplayedProducts] = useState([])
+  const [lastResults, setLastResults] = useState([]);
+  const [lastDisplayedProducts, setLastDisplayedProducts] = useState([]);
 
-  const messagesEndRef = useRef(null)
+  const messagesEndRef = useRef(null);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'end',
-    })
-  }, [messages, loading])
+      behavior: "smooth",
+      block: "end",
+    });
+  }, [messages, loading]);
 
   const handleClearChat = () => {
-    setMessages([INITIAL_MESSAGE])
-    setLastResults([])
-    setLastDisplayedProducts([])
-    setInput('')
-    setLoading(false)
-  }
+    setMessages([INITIAL_MESSAGE]);
+    setLastResults([]);
+    setLastDisplayedProducts([]);
+    setInput("");
+    setLoading(false);
+  };
 
   const handleSend = () => {
-    const message = input.trim()
+    const message = input.trim();
 
-    if (!message || loading) return
+    if (!message || loading) return;
 
-    setMessages(prev => [
-      ...prev,
-      { role: 'user', text: message },
-    ])
+    setMessages((prev) => [...prev, { role: "user", text: message }]);
 
-    setInput('')
-    setLoading(true)
+    setInput("");
+    setLoading(true);
 
     setTimeout(() => {
       try {
         const action = getShoppingAction(
           message,
           lastResults,
-          lastDisplayedProducts
-        )
+          lastDisplayedProducts,
+        );
 
         if (action) {
           if (!action.product) {
-            setMessages(prev => [
+            setMessages((prev) => [
               ...prev,
               {
-                role: 'assistant',
-                text: 'Please search for some products first. Then I can add a selected result to your cart or wishlist.',
+                role: "assistant",
+                text: "Please search for some products first. Then I can add a selected result to your cart or wishlist.",
                 products: [],
                 success: false,
               },
-            ])
-          } else if (action.type === 'cart') {
-            dispatch(addToCart(action.product))
-            setMessages(prev => [
+            ]);
+          } else if (action.type === "cart") {
+            dispatch(addToCart(action.product));
+            setMessages((prev) => [
               ...prev,
               {
-                role: 'assistant',
+                role: "assistant",
                 text: `Done! "${action.product.title}" has been added to your cart. ðŸ›’`,
                 products: [action.product],
                 success: true,
               },
-            ])
+            ]);
           } else {
-            dispatch(toggleWishlist(action.product))
-            setMessages(prev => [
+            dispatch(toggleWishlist(action.product));
+            setMessages((prev) => [
               ...prev,
               {
-                role: 'assistant',
+                role: "assistant",
                 text: `"${action.product.title}" has been sent to your wishlist. If it was already saved, it has been removed. â¤ï¸`,
                 products: [action.product],
                 success: true,
               },
-            ])
+            ]);
           }
-          return
+          return;
         }
 
         const followUpResults = handleFollowUpQuery(
           message,
           lastResults,
-          lastDisplayedProducts
-        )
+          lastDisplayedProducts,
+        );
 
         if (followUpResults !== null) {
-          const displayed = followUpResults.slice(0, 6)
+          const displayed = followUpResults.slice(0, 6);
 
-          setLastResults(followUpResults)
-          setLastDisplayedProducts(displayed)
+          setLastResults(followUpResults);
+          setLastDisplayedProducts(displayed);
 
-          setMessages(prev => [
+          setMessages((prev) => [
             ...prev,
             {
-              role: 'assistant',
+              role: "assistant",
               text: displayed.length
                 ? `Here are ${displayed.length} refined results based on your previous search.`
-                : 'I could not find matching products in your previous results. Try another comparison.',
+                : "I could not find matching products in your previous results. Try another comparison.",
               products: displayed,
               success: displayed.length > 0,
             },
-          ])
+          ]);
 
-          return
+          return;
         }
 
-        const result = processShoppingQuery(products, message)
-        const displayed = result.products.slice(0, 6)
+        const result = processShoppingQuery(products, message);
+        const displayed = result.products.slice(0, 6);
 
-        setLastResults(result.products)
-        setLastDisplayedProducts(displayed)
+        setLastResults(result.products);
+        setLastDisplayedProducts(displayed);
 
-        setMessages(prev => [
+        setMessages((prev) => [
           ...prev,
           {
-            role: 'assistant',
+            role: "assistant",
             text: result.message,
             products: displayed,
             success: result.success,
           },
-        ])
+        ]);
       } catch {
-        setMessages(prev => [
+        setMessages((prev) => [
           ...prev,
           {
-            role: 'assistant',
-            text: 'Something went wrong. Please try again.',
+            role: "assistant",
+            text: "Something went wrong. Please try again.",
             products: [],
             success: false,
           },
-        ])
+        ]);
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }, 400)
-  }
+    }, 400);
+  };
 
-  const handleSuggestion = suggestion => {
-    setInput(suggestion)
-  }
+  const handleSuggestion = (suggestion) => {
+    setInput(suggestion);
+  };
 
-  const handleAddProductToCart = product => {
-    dispatch(addToCart(product))
-    setMessages(prev => [
+  const handleAddProductToCart = (product) => {
+    dispatch(addToCart(product));
+    setMessages((prev) => [
       ...prev,
       {
-        role: 'assistant',
+        role: "assistant",
         text: `"${product.title}" has been added to your cart. ðŸ›’`,
         products: [],
         success: true,
       },
-    ])
-  }
+    ]);
+  };
 
-  const handleAddProductToWishlist = product => {
-    dispatch(toggleWishlist(product))
-    setMessages(prev => [
+  const handleAddProductToWishlist = (product) => {
+    dispatch(toggleWishlist(product));
+    setMessages((prev) => [
       ...prev,
       {
-        role: 'assistant',
+        role: "assistant",
         text: `"${product.title}" wishlist action completed. If it was already saved, it has been removed. â¤ï¸`,
         products: [],
         success: true,
       },
-    ])
-  }
+    ]);
+  };
 
   return (
     <section className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-xl dark:border-slate-800 dark:bg-[#FFF7ED]">
@@ -297,16 +297,14 @@ function AssistantChat({ products = [] }) {
         </div>
 
         <div className="flex-1">
-          <h2 className="font-bold text-[#29213A]">
-            ShopSphere AI Assistant
-          </h2>
+          <h2 className="font-bold text-[#29213A]">ShopSphere AI Assistant</h2>
           <p className="text-sm text-slate-500">
             Your personal shopping companion
           </p>
         </div>
 
         <button
-           onClick={handleClearChat}
+          onClick={handleClearChat}
           disabled={messages.length === 1 && !input && !lastResults.length}
           className="flex items-center gap-2 rounded-xl border border-stone-200 px-3 py-2 text-xs font-semibold text-slate-600 transition hover:border-red-400 hover:text-red-500 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:text-slate-300"
         >
@@ -321,31 +319,29 @@ function AssistantChat({ products = [] }) {
           <div
             key={index}
             className={`flex gap-3 ${
-              message.role === 'user' ? 'flex-row-reverse' : 'flex-row'
+              message.role === "user" ? "flex-row-reverse" : "flex-row"
             }`}
           >
             <div
               className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${
-                message.role === 'user'
-                  ? 'bg-slate-800 text-white'
-                  : 'bg-orange-600 text-white'
+                message.role === "user"
+                  ? "bg-orange-600 text-white"
+                  : "bg-orange-600 text-white"
               }`}
             >
-              {message.role === 'user'
-                ? <User size={18} />
-                : <Bot size={18} />}
+              {message.role === "user" ? <User size={18} /> : <Bot size={18} />}
             </div>
 
             <div
               className={`max-w-[85%] ${
-                message.role === 'user' ? 'text-right' : ''
+                message.role === "user" ? "text-right" : ""
               }`}
             >
               <div
                 className={`inline-block rounded-2xl px-4 py-3 text-sm leading-6 ${
-                  message.role === 'user'
-                    ? 'rounded-tr-sm bg-[#633A98] text-white'
-                    : 'rounded-tl-sm bg-slate-100 text-slate-800 dark:bg-white dark:text-slate-200'
+                  message.role === "user"
+                    ? "rounded-tr-sm bg-[#633A98] text-white"
+                    : "rounded-tl-sm bg-slate-100 text-slate-800 dark:bg-white dark:text-slate-200"
                 }`}
               >
                 {message.text}
@@ -353,7 +349,7 @@ function AssistantChat({ products = [] }) {
 
               {message.products?.length > 0 && (
                 <div className="mt-4 grid grid-cols-1 gap-3 text-left sm:grid-cols-2">
-                  {message.products.map(product => (
+                  {message.products.map((product) => (
                     <div
                       key={product.id}
                       className="overflow-hidden rounded-2xl border border-stone-200 bg-white dark:border-slate-800 dark:bg-white"
@@ -375,7 +371,7 @@ function AssistantChat({ products = [] }) {
                             ${product.price}
                           </span>
                           <span className="text-xs text-amber-500">
-                            â˜… {product.rating || 'N/A'}
+                            ★ {product.rating || "N/A"}
                           </span>
                         </div>
 
@@ -396,7 +392,7 @@ function AssistantChat({ products = [] }) {
                           </button>
                           <button
                             onClick={() => handleAddProductToWishlist(product)}
-                            className="flex items-center justify-center gap-1 rounded-lg border border-[#CDBBE5] bg-[#F8F4FF] px-2 py-2 text-xs font-semibold text-[#573584] transition hover:border-[#633A98] hover:bg-[#EDE3FA]"
+                            className="flex items-center justify-center gap-1 rounded-lg border border-[#CDBBE5] bg-[#F8F4FF] px-2 py-2 text-xs font-semibold text-orange-700 transition hover:border-orange-700 hover:bg-[#EDE3FA]"
                           >
                             <Heart size={14} />
                             Wishlist
@@ -429,7 +425,7 @@ function AssistantChat({ products = [] }) {
         </p>
 
         <div className="flex flex-wrap gap-2">
-          {SUGGESTIONS.map(suggestion => (
+          {SUGGESTIONS.map((suggestion) => (
             <button
               key={suggestion}
               onClick={() => handleSuggestion(suggestion)}
@@ -446,9 +442,9 @@ function AssistantChat({ products = [] }) {
         <input
           type="text"
           value={input}
-          onChange={event => setInput(event.target.value)}
-          onKeyDown={event => {
-            if (event.key === 'Enter') handleSend()
+          onChange={(event) => setInput(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") handleSend();
           }}
           placeholder="Ask me what you want to shop..."
           className="min-w-0 flex-1 rounded-2xl border border-stone-200 bg-orange-50 px-4 py-3 text-sm text-stone-900 outline-none focus:border-orange-500 dark:border-slate-700 dark:bg-white dark:text-white"
@@ -463,14 +459,8 @@ function AssistantChat({ products = [] }) {
           <Send size={19} />
         </button>
       </div>
-
-      <div className="flex items-center justify-center gap-2 pb-4 text-xs text-slate-400">
-        <ShoppingBag size={13} />
-        Rule-based shopping assistant Â· Demo experience
-      </div>
     </section>
-  )
+  );
 }
 
-export default AssistantChat
-
+export default AssistantChat;

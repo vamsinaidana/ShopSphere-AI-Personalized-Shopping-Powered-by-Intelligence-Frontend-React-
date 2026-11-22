@@ -1,57 +1,56 @@
-
-import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
-import { clearCart } from '../../store/slices/cartSlice'
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { clearCart } from "../../store/slices/cartSlice";
 
 export default function Checkout() {
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const items = useSelector(state => state.cart.items)
+  const items = useSelector((state) => state.cart.items);
 
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    address: '',
-    city: '',
-    pincode: '',
-  })
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+    city: "",
+    pincode: "",
+  });
 
   const total = items.reduce(
     (sum, item) => sum + item.price * item.quantity,
-    0
-  )
+    0,
+  );
 
-  const handleChange = e => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  const handleSubmit = e => {
-    e.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
     const order = {
       id: `ORD-${Date.now()}`,
       customer: form,
       items,
       total,
-      status: 'Order Placed',
+      status: "Order Placed",
       date: new Date().toISOString(),
-    }
+    };
 
     const existingOrders = JSON.parse(
-      localStorage.getItem('shopsphere_orders') || '[]'
-    )
+      localStorage.getItem("shopsphere_orders") || "[]",
+    );
 
     localStorage.setItem(
-      'shopsphere_orders',
-      JSON.stringify([order, ...existingOrders])
-    )
+      "shopsphere_orders",
+      JSON.stringify([order, ...existingOrders]),
+    );
 
-    dispatch(clearCart())
-    navigate('/order-success')
-  }
+    dispatch(clearCart());
+    navigate("/order-success");
+  };
 
   if (items.length === 0) {
     return (
@@ -61,7 +60,7 @@ export default function Checkout() {
           Explore Products
         </Link>
       </main>
-    )
+    );
   }
 
   return (
@@ -81,13 +80,13 @@ export default function Checkout() {
             <h2 className="text-xl font-semibold">Shipping Information</h2>
 
             {[
-              { name: 'name', label: 'Full Name', type: 'text' },
-              { name: 'email', label: 'Email Address', type: 'email' },
-              { name: 'phone', label: 'Phone Number', type: 'tel' },
-              { name: 'address', label: 'Full Address', type: 'text' },
-              { name: 'city', label: 'City', type: 'text' },
-              { name: 'pincode', label: 'PIN Code', type: 'text' },
-            ].map(field => (
+              { name: "name", label: "Full Name", type: "text" },
+              { name: "email", label: "Email Address", type: "email" },
+              { name: "phone", label: "Phone Number", type: "tel" },
+              { name: "address", label: "Full Address", type: "text" },
+              { name: "city", label: "City", type: "text" },
+              { name: "pincode", label: "PIN Code", type: "text" },
+            ].map((field) => (
               <div key={field.name}>
                 <label className="mb-2 block text-sm text-slate-300">
                   {field.label}
@@ -116,7 +115,7 @@ export default function Checkout() {
           <div className="h-fit rounded-2xl border border-white/10 bg-slate-900 p-6">
             <h2 className="mb-6 text-xl font-semibold">Order Summary</h2>
 
-            {items.map(item => (
+            {items.map((item) => (
               <div key={item.id} className="mb-4 flex justify-between gap-4">
                 <span className="text-slate-300">
                   {item.title} × {item.quantity}
@@ -137,5 +136,5 @@ export default function Checkout() {
         </div>
       </div>
     </main>
-  )
+  );
 }

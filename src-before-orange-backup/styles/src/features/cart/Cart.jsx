@@ -1,47 +1,39 @@
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 
-import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { useQuery } from '@tanstack/react-query'
+import Navbar from "../../components/layout/Navbar";
+import { updateQuantity, removeFromCart } from "../../store/slices/cartSlice";
 
-import Navbar from '../../components/layout/Navbar'
-import {
-  updateQuantity,
-  removeFromCart,
-} from '../../store/slices/cartSlice'
-
-import { getProducts } from '../../services/productService'
-import RecommendationRail from '../recommendations/components/RecommendationRail'
+import { getProducts } from "../../services/productService";
+import RecommendationRail from "../recommendations/components/RecommendationRail";
 
 function Cart() {
-  const dispatch = useDispatch()
-  const items = useSelector(state => state.cart.items)
+  const dispatch = useDispatch();
+  const items = useSelector((state) => state.cart.items);
 
   const { data, isLoading, isError } = useQuery({
-    queryKey: ['cart-recommendation-products'],
+    queryKey: ["cart-recommendation-products"],
     queryFn: () => getProducts(100),
-  })
+  });
 
-  const products = data?.products || []
+  const products = data?.products || [];
 
   const total = items.reduce(
     (sum, item) => sum + item.price * item.quantity,
-    0
-  )
+    0,
+  );
 
   return (
     <main className="min-h-screen bg-slate-950 px-6 py-12 text-white">
       <Navbar />
 
       <div className="mx-auto max-w-7xl">
-        <h1 className="mb-8 mt-10 text-4xl font-bold">
-          Your Cart
-        </h1>
+        <h1 className="mb-8 mt-10 text-4xl font-bold">Your Cart</h1>
 
         {items.length === 0 ? (
           <div className="rounded-2xl bg-slate-900 p-10 text-center">
-            <h2 className="text-2xl font-semibold">
-              Your cart is empty
-            </h2>
+            <h2 className="text-2xl font-semibold">Your cart is empty</h2>
 
             <p className="mt-3 text-slate-400">
               Add products to your cart to see them here.
@@ -56,7 +48,7 @@ function Cart() {
           </div>
         ) : (
           <div className="max-w-3xl space-y-4">
-            {items.map(item => (
+            {items.map((item) => (
               <div
                 key={item.id}
                 className="flex items-center gap-5 rounded-xl bg-slate-900 p-5"
@@ -68,9 +60,7 @@ function Cart() {
                 />
 
                 <div className="flex-1">
-                  <h2 className="font-semibold">
-                    {item.title}
-                  </h2>
+                  <h2 className="font-semibold">{item.title}</h2>
 
                   <p className="mt-2 text-violet-400">
                     ${item.price} × {item.quantity}
@@ -79,10 +69,12 @@ function Cart() {
                   <div className="mt-3 flex items-center gap-3">
                     <button
                       onClick={() =>
-                        dispatch(updateQuantity({
-                          id: item.id,
-                          quantity: item.quantity - 1,
-                        }))
+                        dispatch(
+                          updateQuantity({
+                            id: item.id,
+                            quantity: item.quantity - 1,
+                          }),
+                        )
                       }
                       disabled={item.quantity <= 1}
                       className="rounded bg-slate-700 px-3 py-1 disabled:opacity-40"
@@ -94,10 +86,12 @@ function Cart() {
 
                     <button
                       onClick={() =>
-                        dispatch(updateQuantity({
-                          id: item.id,
-                          quantity: item.quantity + 1,
-                        }))
+                        dispatch(
+                          updateQuantity({
+                            id: item.id,
+                            quantity: item.quantity + 1,
+                          }),
+                        )
                       }
                       disabled={item.quantity >= item.stock}
                       className="rounded bg-slate-700 px-3 py-1 disabled:opacity-40"
@@ -134,9 +128,7 @@ function Cart() {
         {items.length > 0 && (
           <div className="mt-12">
             {isLoading && (
-              <p className="text-slate-400">
-                Loading recommended products...
-              </p>
+              <p className="text-slate-400">Loading recommended products...</p>
             )}
 
             {!isLoading && !isError && (
@@ -152,7 +144,7 @@ function Cart() {
         )}
       </div>
     </main>
-  )
+  );
 }
 
-export default Cart
+export default Cart;

@@ -1,27 +1,18 @@
-
-import { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { updateProfile, logout } from '../../store/slices/authSlice'
-import {
-  User,
-  Mail,
-  Edit,
-  Save,
-  X,
-  LogOut,
-  ShoppingBag,
-} from 'lucide-react'
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { updateProfile, logout } from "../../store/slices/authSlice";
+import { User, Mail, Edit, Save, X, LogOut, ShoppingBag } from "lucide-react";
 
 export default function Profile() {
-  const dispatch = useDispatch()
-  const user = useSelector(state => state.auth.user)
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.auth.user);
 
-  const [isEditing, setIsEditing] = useState(false)
+  const [isEditing, setIsEditing] = useState(false);
   const [form, setForm] = useState({
-    name: user?.name || '',
-    email: user?.email || '',
-  })
+    name: user?.name || "",
+    email: user?.email || "",
+  });
 
   if (!user) {
     return (
@@ -31,58 +22,50 @@ export default function Profile() {
         <p className="text-slate-400 mt-2 mb-6">
           Please login to view your profile.
         </p>
-        <Link
-          to="/login"
-          className="bg-orange-600 px-6 py-3 rounded-xl"
-        >
+        <Link to="/login" className="bg-orange-600 px-6 py-3 rounded-xl">
           Login Now
         </Link>
       </div>
-    )
+    );
   }
 
-  const handleChange = e => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  const handleSave = e => {
-    e.preventDefault()
+  const handleSave = (e) => {
+    e.preventDefault();
 
-    const users = JSON.parse(
-      localStorage.getItem('shopsphere_users') || '[]'
-    )
+    const users = JSON.parse(localStorage.getItem("shopsphere_users") || "[]");
 
     const emailExists = users.some(
-      item => item.email === form.email && item.id !== user.id
-    )
+      (item) => item.email === form.email && item.id !== user.id,
+    );
 
     if (emailExists) {
-      alert('This email is already registered.')
-      return
+      alert("This email is already registered.");
+      return;
     }
 
-    const updatedUsers = users.map(item =>
+    const updatedUsers = users.map((item) =>
       item.id === user.id
         ? { ...item, name: form.name, email: form.email }
-        : item
-    )
+        : item,
+    );
 
-    localStorage.setItem(
-      'shopsphere_users',
-      JSON.stringify(updatedUsers)
-    )
+    localStorage.setItem("shopsphere_users", JSON.stringify(updatedUsers));
 
-    dispatch(updateProfile(form))
-    setIsEditing(false)
-  }
+    dispatch(updateProfile(form));
+    setIsEditing(false);
+  };
 
   const handleCancel = () => {
     setForm({
-      name: user.name || '',
-      email: user.email || '',
-    })
-    setIsEditing(false)
-  }
+      name: user.name || "",
+      email: user.email || "",
+    });
+    setIsEditing(false);
+  };
 
   return (
     <div className="min-h-screen bg-[#FFF7ED] text-stone-900 px-5 py-12">
@@ -217,5 +200,5 @@ export default function Profile() {
         </div>
       </div>
     </div>
-  )
+  );
 }

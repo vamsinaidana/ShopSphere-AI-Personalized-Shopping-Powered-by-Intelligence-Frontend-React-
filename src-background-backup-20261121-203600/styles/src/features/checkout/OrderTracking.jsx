@@ -1,24 +1,21 @@
-
-import { Link } from 'react-router-dom'
-import { Package, CheckCircle, Clock, ArrowLeft } from 'lucide-react'
+import { Link } from "react-router-dom";
+import { Package, CheckCircle, Clock, ArrowLeft } from "lucide-react";
 
 export default function OrderTracking() {
-  const orders = JSON.parse(
-    localStorage.getItem('shopsphere_orders') || '[]'
-  )
+  const orders = JSON.parse(localStorage.getItem("shopsphere_orders") || "[]");
 
   return (
     <main className="min-h-screen bg-slate-950 px-6 py-12 text-white">
       <div className="mx-auto max-w-3xl">
-
-        <Link to="/products" className="flex items-center gap-2 text-orange-400">
+        <Link
+          to="/products"
+          className="flex items-center gap-2 text-orange-400"
+        >
           <ArrowLeft size={18} />
           Continue Shopping
         </Link>
 
-        <h1 className="mb-3 mt-10 text-4xl font-bold">
-          Track Your Orders
-        </h1>
+        <h1 className="mb-3 mt-10 text-4xl font-bold">Track Your Orders</h1>
 
         <p className="mb-10 text-slate-400">
           Check your recent shopping orders.
@@ -34,7 +31,7 @@ export default function OrderTracking() {
           </div>
         ) : (
           <div className="space-y-5">
-            {orders.map(order => (
+            {orders.map((order) => (
               <div
                 key={order.id}
                 className="rounded-2xl border border-white/10 bg-slate-900 p-6"
@@ -90,8 +87,7 @@ export default function OrderTracking() {
             ))}
           </div>
         )}
-
       </div>
     </main>
-  )
+  );
 }
