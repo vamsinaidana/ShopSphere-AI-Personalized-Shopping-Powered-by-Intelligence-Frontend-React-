@@ -141,14 +141,18 @@ function Navbar() {
   );
 
   return (
-    <nav className="relative z-30 border-b border-orange-200 px-4 py-4 text-white sm:px-6 md:px-12">
+    <nav className="sticky top-0 z-50 w-full border-b border-orange-200 px-4 py-4 text-white sm:px-6 md:px-12">
       <div className="flex items-center justify-between">
         <Link
           to="/"
           onClick={() => setMobileMenuOpen(false)}
           className="text-xl font-bold sm:text-2xl"
         >
-          ShopSphere<span className="text-orange-400"> AI.</span>
+         <img
+  src="/shopsphere-logo.png"
+  alt="ShopSphere AI"
+  className="h-16 w-56 rounded-2xl object-cover object-center"
+/>
         </Link>
         <div className="hidden items-center gap-4 text-sm text-slate-300 xl:flex 2xl:gap-5">
           {navLinks}
@@ -175,3 +179,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

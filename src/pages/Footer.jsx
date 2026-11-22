@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -48,9 +48,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div>
             <Link to="/" className="mb-5 inline-flex items-center gap-3">
-              <span className="text-2xl font-bold tracking-tight text-black">
-                Shop<span className="text-orange-500"> Sphere</span>
-              </span>
+              <img
+                src="/shopsphere-logo.png"
+                alt="ShopSphere AI"
+                className="h-20 w-60 object-cover object-center"
+              />
             </Link>
 
             <p className="mb-6 max-w-xs text-sm leading-7 text-gray-400">
@@ -176,7 +178,7 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-7 text-center text-sm   md:flex-row">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} ShopSphere. All rights reserved.
+            Â© {new Date().getFullYear()} ShopSphere. All rights reserved.
           </p>
 
           <p>
@@ -205,3 +207,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
