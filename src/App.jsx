@@ -29,103 +29,105 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-       <Route
-  path="/products"
-  element={
-    <>
-      <Navbar />
-      <Products />
-    </>
-  }
-/>
-<Route
-  path="/products"
-  element={
-    <>
-      <Navbar />
-      <Products />
-    </>
-  }
-/>
+        <Route
+          path="/products"
+          element={
+            <>
+              <Navbar />
+              <Products />
+            </>
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <>
+              <Navbar />
+              <Products />
+            </>
+          }
+        />
 
-<Route
-  path="/products/:id"
-  element={
-    <>
-      <Navbar />
-      <ProductDetails />
-    </>
-  }
-/>
+        <Route
+          path="/products/:id"
+          element={
+            <>
+              <Navbar />
+              <ProductDetails />
+            </>
+          }
+        />
 
-<Route
-  path="/wishlist"
-  element={
-    <>
-      <Navbar />
-      <Wishlist />
-    </>
-  }
-/>
+        <Route
+          path="/wishlist"
+          element={
+            <>
+              <Navbar />
+              <Wishlist />
+            </>
+          }
+        />
 
-<Route
-  path="/compare"
-  element={
-    <>
-      <Navbar />
-      <ComparePage />
-    </>
-  }
-/>
+        <Route
+          path="/compare"
+          element={
+            <>
+              <Navbar />
+              <ComparePage />
+            </>
+          }
+        />
 
-<Route
-  path="/cart"
-  element={
-    <>
-      <Navbar />
-      <Cart />
-    </>
-  }
-/>
+        <Route
+          path="/cart"
+          element={
+            <>
+              <Navbar />
+              <Cart />
+            </>
+          }
+        />
 
-<Route
-  path="/checkout"
-  element={
-    <>
-      <Navbar />
-      <Checkout />
-    </>
-  }
-/>
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <Navbar />
+              <Checkout />
+            </>
+          }
+        />
 
-<Route
-  path="/track-orders"
-  element={
-    <>
-      <Navbar />
-      <OrderTracking />
-    </>
-  }
-/>
+        <Route
+          path="/track-orders"
+          element={
+            <>
+              <Navbar />
+              <OrderTracking />
+            </>
+          }
+        />
 
-<Route
-  path="/order-success"
-  element={
-    <>
-      <Navbar />
-      <OrderSuccess />
-    </>
-  }
-/>
+        <Route
+          path="/order-success"
+          element={
+            <>
+              <Navbar />
+              <OrderSuccess />
+            </>
+          }
+        />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/profile" element={
-          
-           <>
-      <Navbar />
-      <Profile />
-    </>
-          } />
+        <Route
+          path="/profile"
+          element={
+            <>
+              <Navbar />
+              <Profile />
+            </>
+          }
+        />
         <Route
           path="/admin"
           element={
