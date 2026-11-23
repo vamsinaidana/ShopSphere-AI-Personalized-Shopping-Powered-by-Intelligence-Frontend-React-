@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {
   Bot,
@@ -180,7 +181,7 @@ function AssistantChat({ products = [] }) {
               ...prev,
               {
                 role: "assistant",
-                text: `Done! "${action.product.title}" has been added to your cart. ðŸ›’`,
+                text: `Done! "${action.product.title}" has been added to your cart. Ã°Å¸â€ºâ€™`,
                 products: [action.product],
                 success: true,
               },
@@ -191,7 +192,7 @@ function AssistantChat({ products = [] }) {
               ...prev,
               {
                 role: "assistant",
-                text: `"${action.product.title}" has been sent to your wishlist. If it was already saved, it has been removed. â¤ï¸`,
+                text: `"${action.product.title}" has been sent to your wishlist. If it was already saved, it has been removed. Ã¢ÂÂ¤Ã¯Â¸Â`,
                 products: [action.product],
                 success: true,
               },
@@ -268,7 +269,7 @@ function AssistantChat({ products = [] }) {
       ...prev,
       {
         role: "assistant",
-        text: `"${product.title}" has been added to your cart. ðŸ›’`,
+        text: `"${product.title}" has been added to your cart. Ã°Å¸â€ºâ€™`,
         products: [],
         success: true,
       },
@@ -281,7 +282,7 @@ function AssistantChat({ products = [] }) {
       ...prev,
       {
         role: "assistant",
-        text: `"${product.title}" wishlist action completed. If it was already saved, it has been removed. â¤ï¸`,
+        text: `"${product.title}" wishlist action completed. If it was already saved, it has been removed. Ã¢ÂÂ¤Ã¯Â¸Â`,
         products: [],
         success: true,
       },
@@ -371,16 +372,16 @@ function AssistantChat({ products = [] }) {
                             ${product.price}
                           </span>
                           <span className="text-xs text-amber-500">
-                            ★ {product.rating || "N/A"}
+                            â˜… {product.rating || "N/A"}
                           </span>
                         </div>
 
-                        <a
-                          href={`/products/${product.id}`}
-                          className="mt-3 block rounded-xl bg-white px-3 py-2 text-center text-xs font-semibold text-white hover:bg-orange-600 dark:bg-orange-600"
+                        <Link
+                          to={`/products/${product.id}`}
+                          className="mt-3 block rounded-xl bg-orange-600 px-3 py-2 text-center text-xs font-semibold text-white transition hover:bg-orange-700"
                         >
                           View Product
-                        </a>
+                        </Link>
 
                         <div className="mt-2 grid grid-cols-2 gap-2">
                           <button
@@ -464,3 +465,4 @@ function AssistantChat({ products = [] }) {
 }
 
 export default AssistantChat;
+
