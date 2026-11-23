@@ -21,10 +21,12 @@ import Profile from "./features/auth/Profile";
 import AdminDashboard from "./features/admin/AdminDashboard";
 import AssistantPage from "./pages/AssistantPage";
 import Footer from "./pages/Footer";
+import ScrollToTop from "./components/app/ScrollToTop";
 
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
