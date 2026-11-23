@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, Link } from "react-router-dom";
+import { createPortal } from "react-dom";
 import {
   ShoppingCart,
   Heart,
@@ -207,25 +208,18 @@ function Home() {
 
             {/* FLOATING GLASS CARD */}
             <div className="lux-floating-card">
-              <span className="lux-floating-icon">âœ§</span>
-              <div>
+               <div>
                 <p>AI SHOPPING ASSISTANT</p>
                 <h4>Find your perfect match</h4>
               </div>
             </div>
           </div>
         </div>
-        {/* FLOATING AI ASSISTANT BUTTON */}
-        <Link
-          to="/assistant"
-          title="Ask AI Assistant"
-          aria-label="Open AI Shopping Assistant"
-          className="lux-ai-floating-btn"
-        >
-          <Bot size={28} />
-          <span className="lux-ai-tooltip">Ask AI Assistant</span>
-        </Link>
+
+      
+
       </section>
+      
 
       {/* Recommendation Section */}
       <div className="mx-auto max-w-7xl px-6 pb-16">
@@ -288,6 +282,19 @@ function Home() {
 
         <RecentlyViewedRail />
       </div>
+
+      {createPortal(
+  <Link
+    to="/assistant"
+    title="Ask AI Assistant"
+    aria-label="Open AI Shopping Assistant"
+    className="lux-ai-floating-btn"
+  >
+    <Bot size={28} />
+    <span className="lux-ai-tooltip">Ask AI Assistant</span>
+  </Link>,
+  document.body
+)}
     </main>
   );
 }

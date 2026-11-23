@@ -67,8 +67,7 @@ function ComparePage() {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#FFF7ED] px-4 py-8 text-stone-900 sm:px-6 md:px-12 md:py-10">
-      <Navbar />
-      <div className="mx-auto mt-10 max-w-7xl">
+       <div className="mx-auto mt-10 max-w-7xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-orange-400">

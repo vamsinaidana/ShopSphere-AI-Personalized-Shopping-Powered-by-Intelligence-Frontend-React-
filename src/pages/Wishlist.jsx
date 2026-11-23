@@ -49,8 +49,7 @@ function Wishlist() {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#FFF7ED] px-4 py-8 text-stone-900 sm:px-6 md:px-12 md:py-12">
-      <Navbar />
-
+ 
       <div className="mb-10 mt-10">
         <p className="text-sm font-semibold uppercase tracking-widest text-orange-400">
           Your favourites

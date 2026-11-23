@@ -29,17 +29,103 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/compare" element={<ComparePage />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/track-orders" element={<OrderTracking />} />
-        <Route path="/order-success" element={<OrderSuccess />} />
+       <Route
+  path="/products"
+  element={
+    <>
+      <Navbar />
+      <Products />
+    </>
+  }
+/>
+<Route
+  path="/products"
+  element={
+    <>
+      <Navbar />
+      <Products />
+    </>
+  }
+/>
+
+<Route
+  path="/products/:id"
+  element={
+    <>
+      <Navbar />
+      <ProductDetails />
+    </>
+  }
+/>
+
+<Route
+  path="/wishlist"
+  element={
+    <>
+      <Navbar />
+      <Wishlist />
+    </>
+  }
+/>
+
+<Route
+  path="/compare"
+  element={
+    <>
+      <Navbar />
+      <ComparePage />
+    </>
+  }
+/>
+
+<Route
+  path="/cart"
+  element={
+    <>
+      <Navbar />
+      <Cart />
+    </>
+  }
+/>
+
+<Route
+  path="/checkout"
+  element={
+    <>
+      <Navbar />
+      <Checkout />
+    </>
+  }
+/>
+
+<Route
+  path="/track-orders"
+  element={
+    <>
+      <Navbar />
+      <OrderTracking />
+    </>
+  }
+/>
+
+<Route
+  path="/order-success"
+  element={
+    <>
+      <Navbar />
+      <OrderSuccess />
+    </>
+  }
+/>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={
+          
+           <>
+      <Navbar />
+      <Profile />
+    </>
+          } />
         <Route
           path="/admin"
           element={

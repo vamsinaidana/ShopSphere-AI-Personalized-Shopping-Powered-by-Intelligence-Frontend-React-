@@ -2387,3 +2387,24 @@ footer a {
     bottom: 18px;
   }
 }
+
+
+
+.lux-ai-floating-btn {
+  position: fixed !important;
+  right: 26px !important;
+  bottom: 26px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 999999 !important;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f97316;
+  color: white;
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.35);
+}

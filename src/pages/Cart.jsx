@@ -63,8 +63,7 @@ function Cart() {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#FFF7ED] px-4 py-6 text-stone-900 sm:px-6 sm:py-10">
-      <Navbar />
-
+ 
       <h1 className="mb-8 mt-8 text-3xl font-bold sm:text-4xl">Your Cart</h1>
 
       {items.length === 0 ? (
@@ -110,7 +109,7 @@ function Cart() {
                     }
                     disabled={item.quantity <= 1}
                     className="rounded bg-slate-700 px-3 py-1 disabled:opacity-40"
-                  ></button>
+                  >-</button>
 
                   <span>{item.quantity}</span>
 
