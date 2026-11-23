@@ -105,7 +105,7 @@ Frontend Developer | React.js | JavaScript | Tailwind CSS | Redux Toolkit
 
 ## 🌐 Project Links
 
-- **GitHub:**  
+- **GitHub:**  https://github.com/vamsinaidana/ShopSphere-AI-Personalized-Shopping-Powered-by-Intelligence-Frontend-React-
 - **Live Demo:** https://shop-sphere-ai-personalized-shoppin-inky.vercel.app/
 
 ---
