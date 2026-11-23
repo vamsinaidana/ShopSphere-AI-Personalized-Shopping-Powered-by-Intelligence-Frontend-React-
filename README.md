@@ -1,16 +1,113 @@
-# React + Vite
+ # 🛍️ ShopSphere AI
+### Personalized Shopping, Powered by Intelligence
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+ShopSphere AI is a modern, responsive shopping frontend designed to deliver a smarter and more personalized online shopping experience. It helps users discover products, compare favourites, manage wishlists, and enjoy a smooth shopping journey through a clean and intuitive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🏠 **Modern Home Page** – Attractive shopping homepage with responsive design.
+- 🛒 **Product Browsing** – Explore and view product details.
+- ❤️ **Wishlist** – Save favourite products for later.
+- ⚖️ **Product Comparison** – Compare products easily.
+- 🛍️ **Shopping Cart** – Add and manage cart items.
+- 💳 **Checkout** – Smooth checkout interface.
+- 📦 **Order Tracking** – Track order information.
+- 🤖 **AI Shopping Assistant** – Interactive shopping assistant interface.
+- 👤 **User Profile** – Manage user information.
+- 🔐 **Admin Panel** – Administrative interface.
+- 📱 **Responsive Design** – Optimized for desktop, tablet, and mobile screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend development |
+| JavaScript | Application logic |
+| Tailwind CSS | Styling and responsive UI |
+| Redux Toolkit | State management |
+| React Query | Server-state management |
+| React Router DOM | Navigation and routing |
+| Framer Motion | Animations |
+| Vite | Development and build tool |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📂 Main Pages
+
+- Home
+- Products
+- Product Details
+- Wishlist
+- Compare
+- Cart
+- Checkout
+- Track Orders
+- Order Success
+- AI Assistant
+- My Profile
+- Admin
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/vamsinaidana/ShopSphere-AI-Personalized-Shopping-Powered-by-Intelligence-Frontend-React-.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd ShopSphere-AI-Personalized-Shopping-Powered-by-Intelligence-Frontend-React-
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal.
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+## 📱 Responsive Design
+
+ShopSphere AI is designed to provide a consistent shopping experience across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+## 👨‍💻 Developer
+
+**Vamsi Nadana**
+
+Frontend Developer | React.js | JavaScript | Tailwind CSS | Redux Toolkit
+
+**Developed as part of the Internmo Internship Program.**
+
+## 🏢 Internship
+
+**Organization:** Internmo  
+**Project:** ShopSphere AI – Personalized Shopping, Powered by Intelligence
+
+## 🌐 Project Links
+
+- **GitHub:**  
+- **Live Demo:** https://shop-sphere-ai-personalized-shoppin-inky.vercel.app/
+
+---
+
+ 
